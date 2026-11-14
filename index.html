@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post-Merger Service Guide</title>
+<meta name="description" content="Một lần là xong: where to file common procedures after Viet Nam's 2025 province and commune mergers, what to bring, your rights at the counter, and the fixed-boundary SIPAS evidence behind it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap">
+<style>
+:root{
+  /* Layout: one 72rem reading column. The hero is the live 63-to-34 merge; numbered sections follow the paper's argument (change, estimates, distance); a sortable unit monitor and the method close the page. */
+  --bg:#fcfcfb;
+  --panel:#f2f1ec;
+  --ink:#0b0b0b;
+  --ink-2:#52514e;
+  --ink-3:#6b6a65;
+  --rule:#e1e0d9;
+  --axis:#c3c2b7;
+  --merged:#eb6834;
+  --unmerged:#2a78d6;
+  --accent:#0f6b5c;
+  --accent-ink:#ffffff;
+  --accent-soft:#e4f1ed;
+  --display:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1a19;--panel:#242422;--ink:#f0efec;--ink-2:#c3c2b7;--ink-3:#a09e95;--rule:#2c2c2a;--axis:#4a4945;--merged:#d95926;--unmerged:#3987e5;--accent:#5cc2ab;--accent-ink:#0b0b0b;--accent-soft:#1d3631;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1a1a19;--panel:#242422;--ink:#f0efec;--ink-2:#c3c2b7;--ink-3:#a09e95;--rule:#2c2c2a;--axis:#4a4945;--merged:#d95926;--unmerged:#3987e5;--accent:#5cc2ab;--accent-ink:#0b0b0b;--accent-soft:#1d3631;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--body)}
+a{color:inherit;text-decoration-color:var(--axis);text-underline-offset:3px}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+button,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:72rem;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--rule)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;gap:4px 28px;min-height:52px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:8px;text-decoration:none;white-space:nowrap}
+.brand b{font:700 13.5px/1 var(--body);letter-spacing:.1em}
+.brand span{font:italic 500 18px/1 var(--display)}
+.bar nav{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.bar nav::-webkit-scrollbar{display:none}
+.bar nav a{font-size:13.5px;color:var(--ink-2);text-decoration:none;white-space:nowrap;padding:15px 0 13px;border-bottom:2px solid transparent}
+.bar nav a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+@media (max-width:820px){.bar{position:static}.bar-in{padding-top:12px}.bar nav a{padding:8px 0 10px}}
+section[id]{scroll-margin-top:72px}
+
+/* hero */
+.hero{padding-top:52px}
+.eyebrow{margin:0 0 14px;font-size:12.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+h1{margin:0 0 18px;max-width:21ch;font:500 clamp(34px,5.4vw,58px)/1.04 var(--display);letter-spacing:-.018em;text-wrap:balance;font-variation-settings:"opsz" 72}
+.deck{margin:0 0 30px;max-width:64ch;font-size:clamp(16.5px,1.6vw,18.5px);line-height:1.6;color:var(--ink-2)}
+.hero-fig{margin:0}
+.hero-controls{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;padding:16px 0 10px;border-top:1px solid var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);font-weight:600;font-size:14.5px;line-height:1.2;cursor:pointer}
+.btn:hover{opacity:.86}
+.readout{display:flex;align-items:baseline;gap:4px 12px;flex-wrap:wrap}
+.readout .lab{font-size:13.5px;color:var(--ink-2)}
+.readout b{font-size:32px;line-height:1;font-weight:600;font-variant-numeric:tabular-nums}
+.readout .sub{font-size:13.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;font-size:13px;color:var(--ink-2)}
+.legend .item{display:inline-flex;align-items:center;gap:7px}
+.hero-controls .legend{margin-left:auto}
+.sw{display:inline-block;width:10px;height:10px;border-radius:50%;flex:none}
+.sw.m{background:var(--merged)}.sw.n{background:var(--unmerged)}
+.sw.o{background:transparent;border:2px solid var(--ink-2)}.sw.f{background:var(--ink-2)}
+.sw.tk{width:2px;height:12px;border-radius:0;background:var(--ink-3)}
+figcaption{font-size:13px;color:var(--ink-3);margin-top:8px;max-width:84ch}
+
+/* charts */
+.chart{position:relative;width:100%;min-height:40px}
+.svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--body)}
+.svg:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:4px}
+.svg .grid{stroke:var(--rule);stroke-width:1;shape-rendering:crispEdges}
+.svg .zero{stroke:var(--axis);stroke-width:1;shape-rendering:crispEdges}
+.svg .tick{fill:var(--ink-3);font-size:11.5px;font-variant-numeric:tabular-nums}
+.svg .axlab{fill:var(--ink-3);font-size:12px}
+.svg .rownum{fill:var(--ink);font:500 56px/1 var(--display);font-variation-settings:"opsz" 72;letter-spacing:-.02em}
+.svg .rowlab{fill:var(--ink-2);font-size:12.5px}
+.svg .strong{fill:var(--ink);font-weight:600}
+.svg .halo{paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.svg [data-u]{transition:opacity .2s}
+.link{stroke-width:1;opacity:.32}
+.link.m{stroke:var(--merged)}.link.n{stroke:var(--unmerged)}
+.link.sel{opacity:.9;stroke-width:1.5}
+.pdot,.udot,.sdot{stroke:var(--bg);stroke-width:2}
+.pdot.m,.udot.m,.sdot{fill:var(--merged)}
+.pdot.n,.udot.n{fill:var(--unmerged)}
+.selring{fill:none;stroke:var(--ink);stroke-width:2;pointer-events:none}
+svg.focusing [data-u]:not(.on){opacity:.13}
+svg.focusing .link.on{opacity:.95}
+.row{cursor:pointer}
+.row .rowbg{fill:transparent}
+.row.hover .rowbg,.row.sel .rowbg{fill:var(--panel)}
+.rlab{font-size:12.5px;fill:var(--ink)}
+.row.sel .rlab{font-weight:600}
+.bar-l{stroke-width:2;stroke-linecap:round;opacity:.6}
+.bar-l.m{stroke:var(--merged)}.bar-l.n{stroke:var(--unmerged)}
+.o24{fill:var(--bg);stroke-width:2}.o24.m{stroke:var(--merged)}.o24.n{stroke:var(--unmerged)}
+.f25{stroke:var(--bg);stroke-width:2}.f25.m{fill:var(--merged)}.f25.n{fill:var(--unmerged)}
+.ghost{stroke:var(--ink-3);stroke-width:1.5;transition:opacity .2s}
+.fit{stroke:var(--ink-2);stroke-width:2;stroke-linecap:round}
+.plab{fill:var(--ink-2);font-size:11.5px}
+
+/* tooltip */
+.tip{position:fixed;z-index:30;pointer-events:none;min-width:150px;max-width:270px;padding:9px 11px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--ink);box-shadow:0 8px 28px rgba(0,0,0,.14);font-size:12.5px;line-height:1.4}
+.tip-v{font-size:19px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
+.tip-t{display:flex;align-items:center;gap:7px;font-weight:500;margin:2px 0 3px}
+.tip .key{display:inline-block;width:14px;height:2px;border-radius:1px;flex:none}
+.tip .key.m{background:var(--merged)}.tip .key.n{background:var(--unmerged)}.tip .key.k{background:var(--ink-2)}
+.tip-l{color:var(--ink-2)}
+
+/* below hero */
+.below{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:28px 48px;margin-top:36px;align-items:start}
+.below>*{min-width:0}
+@media (max-width:940px){.below{grid-template-columns:minmax(0,1fr)}}
+.hides h2{font-size:clamp(22px,2.4vw,26px);margin-bottom:10px}
+.hides p{margin:0 0 12px;max-width:60ch;color:var(--ink-2);font-size:15px}
+.identity{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 14px;margin:14px 0 18px}
+.identity div{display:flex;flex-direction:column}
+.identity b{font-size:28px;font-weight:600;line-height:1.1}
+.identity span{font-size:12px;color:var(--ink-3);max-width:9rem}
+.identity i{font-style:normal;font-size:24px;color:var(--ink-3);line-height:1.15}
+.abs-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(14.5rem,1fr));gap:6px;margin-top:12px}
+.abs{box-sizing:border-box;display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:transparent;cursor:pointer;font-size:13.5px;text-align:left}
+.abs:hover{background:var(--panel)}
+.abs-n{font-weight:500}
+.abs-v{font-variant-numeric:tabular-nums}
+.abs-h{grid-column:1/-1;font-size:12px;color:var(--ink-3)}
+.detail-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px;margin-bottom:12px}
+.detail-head label{font:600 15px/1.3 var(--body)}
+select{padding:7px 32px 7px 10px;border:1px solid var(--axis);border-radius:8px;background-color:var(--bg);color:var(--ink);font-size:14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-2) 50%),linear-gradient(135deg,var(--ink-2) 50%,transparent 50%);background-position:calc(100% - 16px) 52%,calc(100% - 11px) 52%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+
+/* detail card */
+.card{border:1px solid var(--rule);border-radius:12px;background:var(--panel);padding:20px}
+.card-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.uname{margin:0;font:500 28px/1.1 var(--display);letter-spacing:-.01em}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:4px 10px;border:1px solid var(--axis);border-radius:999px;font-size:12.5px;color:var(--ink-2);background:var(--bg)}
+.card-sub{margin:8px 0 0;font-size:14px;color:var(--ink-2)}
+.kv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.kv span{display:block;font-size:12px;color:var(--ink-3)}
+.kv b{font-size:20px;font-weight:600}
+@media (max-width:440px){.kv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card-two{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:flex-start}
+.subs{margin:0;display:grid;grid-template-columns:auto auto;gap:4px 14px;font-size:13.5px;font-variant-numeric:tabular-nums}
+.subs dt{color:var(--ink-3)}.subs dd{margin:0}
+.subs .fn{grid-column:1/-1;font-size:12px;color:var(--ink-3)}
+.spark{display:block}
+.spark .sp-avg{fill:none;stroke:var(--ink-3);stroke-width:1.5}
+.spark .sp-line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.spark .sp-line.m{stroke:var(--merged)}.spark .sp-line.n{stroke:var(--unmerged)}
+.spark .sp-dot.m{fill:var(--merged)}.spark .sp-dot.n{fill:var(--unmerged)}
+.spark .sp-lab{font-size:11.5px;fill:var(--ink);font-variant-numeric:tabular-nums}
+.spark .sp-yr{font-size:10.5px;fill:var(--ink-3)}
+.sp-key{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink-3);margin:4px 0 0}
+.sp-key i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:5px}
+.sp-key i.m{background:var(--merged)}.sp-key i.n{background:var(--unmerged)}.sp-key i.a{background:var(--ink-3)}
+.mini-wrap{overflow-x:auto;margin-top:16px}
+.mini{width:100%;min-width:500px;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.mini th,.mini td{padding:7px 8px;text-align:right;border-bottom:1px solid var(--rule)}
+.mini thead th{font-weight:500;color:var(--ink-3);font-size:12px;vertical-align:bottom}
+.mini th:first-child,.mini td:first-child{text-align:left;padding-left:0}
+.mini tbody th{font-weight:500}
+.mini .naive{color:var(--ink-3)}
+.formula{margin:12px 0 0;font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.foot{margin:8px 0 0;font-size:12.5px;color:var(--ink-3);max-width:70ch}
+
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:56px 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.tile{padding:18px 20px 20px 0}
+.tile+.tile{padding-left:20px;border-left:1px solid var(--rule)}
+.tile .lab{font-size:13px;color:var(--ink-3)}
+.tile .val{margin:6px 0 4px;font-size:28px;font-weight:600;line-height:1.15}
+.tile .note{font-size:13.5px;color:var(--ink-2)}
+@media (max-width:880px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tile:nth-child(3){padding-left:0;border-left:0}.tile:nth-child(n+3){border-top:1px solid var(--rule)}}
+@media (max-width:500px){.tiles{grid-template-columns:minmax(0,1fr)}.tile,.tile+.tile{padding-left:0;border-left:0}.tile+.tile{border-top:1px solid var(--rule)}}
+
+/* sections */
+.block{margin-top:76px}
+.block::before{content:"";display:block;margin-bottom:28px;border-top:1px solid var(--ink)}
+h2{margin:0 0 12px;max-width:30ch;font:500 clamp(26px,3.3vw,36px)/1.12 var(--display);letter-spacing:-.01em;text-wrap:balance}
+h2 .num{margin-right:.4em;font-style:italic;font-weight:400;color:var(--ink-3)}
+.lead{margin:0 0 22px;max-width:66ch;color:var(--ink-2)}
+.note{margin:16px 0 0;max-width:72ch;font-size:14.5px;color:var(--ink-2)}
+h3{margin:40px 0 10px;font:600 15px/1.35 var(--body)}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin:0 0 16px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:2px;padding:3px;border:1px solid var(--axis);border-radius:14px}
+.seg button{padding:8px 13px;border:0;border-radius:11px;background:transparent;color:var(--ink-2);font-size:13.5px;font-weight:500;cursor:pointer}
+.seg button:hover{color:var(--ink);background:var(--panel)}
+.seg button[aria-checked="true"]{background:var(--ink);color:var(--bg)}
+.field{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-2)}
+.stats{display:flex;flex-wrap:wrap;gap:12px 34px;margin:4px 0 14px;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stats div{display:flex;flex-direction:column;gap:2px;min-width:7rem}
+.stats span{font-size:12.5px;color:var(--ink-3)}
+.stats b{font-size:22px;font-weight:600;line-height:1.15;font-variant-numeric:tabular-nums}
+.stats em{font-style:normal;font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* forest */
+.forest{max-width:62rem}
+.fgroup{padding:16px 0 6px;font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
+.frow{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,2fr) 9.5rem;gap:4px 18px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.frow.axisrow{border-top:0;padding-top:0}
+.flab{display:flex;flex-wrap:wrap;gap:0 8px;align-items:baseline;font-size:14px}
+.flab .fn{font-size:12px;color:var(--ink-3)}
+.frow.main .flab span:first-child{font-weight:600}
+.fval{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:baseline;gap:0 8px;font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.fval b{font-size:15px;color:var(--ink)}
+.fval .fp{color:var(--ink-3)}
+.fbar{min-width:0}
+.fbar .band{fill:var(--panel)}
+.fbar .ci{stroke:var(--ink-2);stroke-width:2;stroke-linecap:round}
+.fbar .pt{fill:var(--ink);stroke:var(--bg);stroke-width:2}
+@media (max-width:640px){.frow{grid-template-columns:minmax(0,1fr) auto}.fbar{grid-column:1/-1;order:3}}
+
+/* tables */
+.data{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.data th,.data td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--rule)}
+.data thead th{font-size:12.5px;font-weight:500;color:var(--ink-3);border-bottom:1px solid var(--ink-2);vertical-align:bottom}
+.data th:first-child,.data td:first-child{text-align:left;padding-left:0}
+.data tbody th{font-weight:400}
+.decomp{max-width:660px}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+#unitTable{min-width:800px}
+#unitTable thead th button{all:unset;cursor:pointer;display:inline-flex;gap:4px;align-items:center;white-space:nowrap}
+#unitTable thead th button:hover{color:var(--ink)}
+#unitTable thead th button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:3px}
+.arr{display:inline-block;min-width:.8em;color:var(--ink)}
+.urow{cursor:pointer}
+.urow:hover,.urow.sel{background:var(--panel)}
+.urow th{font-weight:500}
+.rowbtn{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:9px;font-weight:500;white-space:nowrap}
+.rowbtn::before{content:"";width:6px;height:6px;border-right:1.5px solid var(--ink-3);border-bottom:1.5px solid var(--ink-3);transform:rotate(-45deg);transition:transform .15s}
+.rowbtn[aria-expanded="true"]::before{transform:rotate(45deg)}
+.rowbtn:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:3px}
+.type{white-space:nowrap}
+.type .sw{margin-right:7px}
+.chg{white-space:nowrap}
+.chg svg{vertical-align:middle;margin-right:8px}
+.chg span{display:inline-block;min-width:3.4em}
+.mb.m{fill:var(--merged)}.mb.n{fill:var(--unmerged)}.mb0{stroke:var(--axis);stroke-width:1}
+.drow>td{padding:4px 0 18px!important;text-align:left!important;background:var(--panel)}
+.drow .card{background:var(--bg)}
+
+/* method */
+.defs{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:12px 28px;margin:0;max-width:64rem}
+.defs dt{font-weight:600;font-size:14.5px}
+.defs dd{margin:0;color:var(--ink-2);font-size:14.5px;max-width:68ch}
+@media (max-width:720px){.defs{grid-template-columns:minmax(0,1fr);gap:4px}.defs dd{margin-bottom:10px}}
+.limits{margin:0;padding-left:1.1em;color:var(--ink-2);font-size:14.5px;max-width:72ch}
+.limits li{margin:5px 0}
+.btn-ghost{padding:9px 15px;border:1px solid var(--ink);border-radius:999px;background:transparent;font-size:14px;font-weight:500;cursor:pointer}
+.btn-ghost:hover{background:var(--panel)}
+.copyrow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:14px 0}
+#copyStatus{font-size:13.5px;color:var(--ink-2)}
+#csvFallback{width:100%;margin-top:6px;padding:10px;border:1px solid var(--axis);border-radius:8px;background:var(--panel);color:var(--ink);font:12px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+footer{margin-top:84px;padding:26px 0 52px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-3)}
+footer p{margin:0 0 6px;max-width:90ch}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* ---------- bilingual switch, header, views ---------- */
+html[lang="vi"] .l-en,html[lang="en"] .l-vi{display:none!important}
+html.big{font-size:118.75%}
+.skip{position:absolute;left:-9999px;top:0;z-index:60;padding:.6rem 1rem;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none}
+.skip:focus{left:1rem;top:.5rem}
+.top{position:sticky;top:0;z-index:12;background:var(--bg);border-bottom:1px solid var(--rule)}
+.top-in{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.25rem;min-height:3.6rem}
+.brand2{display:flex;flex-direction:column;margin-right:auto;text-decoration:none;line-height:1.15}
+.brand2 b{font:italic 500 1.35rem/1.1 var(--display);letter-spacing:-.01em}
+.brand2 span{font-size:.78rem;color:var(--ink-3)}
+.tabs{display:flex;gap:.25rem}
+.tab{padding:.55rem .95rem;border-radius:999px;font-weight:600;font-size:.95rem;color:var(--ink-2);text-decoration:none}
+.tab:hover{background:var(--panel);color:var(--ink)}
+.tab[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.tools{display:flex;align-items:center;gap:.4rem}
+.lang{display:inline-flex;padding:2px;border:1px solid var(--axis);border-radius:999px}
+.lang button{padding:.35rem .65rem;border:0;border-radius:999px;background:transparent;color:var(--ink-2);font-weight:700;font-size:.82rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.bigbtn{padding:.38rem .75rem;border:1px solid var(--axis);border-radius:999px;background:transparent;color:var(--ink);font-weight:700;font-size:.88rem;cursor:pointer}
+.bigbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (max-width:760px){.top{position:static}.top-in{padding-top:.65rem;padding-bottom:.65rem}.brand2{width:100%}}
+
+/* ---------- service view ---------- */
+.svc-hero{padding-top:3rem}
+.svc-hero h1{max-width:16ch}
+.svc-deck{margin:0 0 1rem;max-width:60ch;font-size:clamp(1.05rem,1.6vw,1.2rem);line-height:1.6;color:var(--ink-2)}
+.indep{margin:0 0 2.25rem;padding:.7rem 1rem;max-width:62ch;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:var(--accent-soft);font-size:.92rem;color:var(--ink)}
+.tool-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:2rem 3rem;align-items:start;padding-top:1.75rem;border-top:1px solid var(--ink)}
+@media (max-width:920px){.tool-grid{grid-template-columns:minmax(0,1fr)}}
+.tool-in,.tool-out{min-width:0}
+@media (min-width:921px){.tool-in{position:sticky;top:4.75rem}}
+.tool-out{display:grid;gap:1rem}
+.step{min-width:0;margin:0 0 1.75rem;padding:0;border:0}
+.step-lab{display:flex;align-items:center;gap:.75rem;margin:0 0 .8rem;padding:0;font:600 1.15rem/1.35 var(--body);color:var(--ink)}
+.step-n{display:inline-grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--accent);color:var(--accent-ink);font:700 1rem/1 var(--body)}
+.big-select{width:100%;padding:.8rem 2.6rem .8rem .9rem;border-width:1.5px;border-radius:10px;font-size:1.1rem;background-position:calc(100% - 22px) 52%,calc(100% - 17px) 52%}
+.procs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+@media (max-width:520px){.procs{grid-template-columns:minmax(0,1fr)}}
+.proc{display:flex;align-items:center;gap:.7rem;min-height:3.3rem;padding:.65rem .9rem;border:1.5px solid var(--rule);border-radius:10px;background:var(--bg);font-size:1rem;line-height:1.3;cursor:pointer}
+.proc:hover{border-color:var(--axis)}
+.proc input{flex:none;display:grid;place-items:center;width:1.15rem;height:1.15rem;margin:0;border:2px solid var(--ink-3);border-radius:50%;appearance:none;-webkit-appearance:none;background:transparent}
+.proc input:checked{border-color:var(--accent);background:radial-gradient(circle,var(--accent) 0 42%,transparent 47%)}
+.proc input:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.proc:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.example{margin:0 0 .75rem;padding:.6rem .85rem;border:1px dashed var(--axis);border-radius:8px;font-size:.92rem;color:var(--ink-2)}
+.example[hidden]{display:none}
+.helper-note{margin:0;font-size:.9rem;color:var(--ink-3);max-width:46ch}
+
+.pcard{padding:1.1rem 1.2rem;border:1px solid var(--rule);border-radius:14px;background:var(--panel)}
+.pcard p{margin:0 0 .55rem;font-size:1rem}
+.pc-eyebrow{font-size:.78rem!important;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.pc-main{font-size:1.08rem!important}
+.pc-note{color:var(--ink-2);font-size:.95rem!important}
+.pc-ev{display:grid;gap:.2rem;margin-top:.8rem;padding-top:.8rem;border-top:1px solid var(--rule)}
+.pc-ev-lab{font-size:.84rem;color:var(--ink-3)}
+.pc-ev-val{font-size:1.45rem;font-weight:600;line-height:1.2}
+.pc-ev-sub{font-size:.9rem;color:var(--ink-2)}
+.pc-link{justify-self:start;margin-top:.4rem;font-weight:600;color:var(--accent);text-decoration:none}
+.pc-link:hover{text-decoration:underline}
+
+.rcard{padding:1.5rem;border:1.5px solid var(--ink);border-radius:16px;background:var(--bg)}
+.rc-eyebrow{margin:0 0 .3rem;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.rcard .rc-title{margin:0 0 1rem;max-width:none;font:500 clamp(1.6rem,3vw,2.1rem)/1.15 var(--display);letter-spacing:-.01em}
+.rc-facts{display:grid;grid-template-columns:minmax(0,8.5rem) minmax(0,1fr);gap:.65rem 1rem;margin:0 0 1rem;padding:0 0 1rem;border-bottom:1px solid var(--rule)}
+.rc-facts dt{padding-top:.12rem;font-size:.85rem;font-weight:600;color:var(--ink-3)}
+.rc-facts dd{margin:0;font-size:1rem}
+@media (max-width:520px){.rc-facts{grid-template-columns:minmax(0,1fr);gap:.1rem}.rc-facts dd{margin-bottom:.65rem}}
+.rc-note{margin:0 0 1.1rem;padding:.75rem 1rem;border-radius:10px;background:var(--panel);font-size:.95rem}
+.checklist{display:grid;gap:1.05rem}
+.cl-group h3{margin:0 0 .45rem;font:600 .95rem/1.3 var(--body);color:var(--ink-2)}
+.cl-group ul{display:grid;gap:.4rem;margin:0;padding:0;list-style:none}
+.cl-group li{display:flex;align-items:flex-start;gap:.6rem}
+.cl-group input{flex:none;width:1.25rem;height:1.25rem;margin:.18rem 0 0;accent-color:var(--accent)}
+.cl-group label{font-size:1rem;line-height:1.45;cursor:pointer}
+.cl-group input:checked+label{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--axis)}
+.rc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:1.3rem 0 .7rem}
+.btn-acc{padding:.72rem 1.15rem;border:0;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:1rem;cursor:pointer}
+.btn-acc:hover{filter:brightness(1.08)}
+.btn-line{display:inline-flex;align-items:center;gap:.4rem;padding:.68rem 1.1rem;border:1.5px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);font-weight:600;font-size:1rem;text-decoration:none;cursor:pointer}
+.btn-line:hover{background:var(--panel)}
+.rc-status{font-size:.9rem;color:var(--ink-2)}
+.rc-fallback{width:100%;margin:.2rem 0 .6rem;padding:.7rem;border:1px solid var(--axis);border-radius:8px;background:var(--panel);color:var(--ink);font:12px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.rc-caveat{margin:.4rem 0 .35rem;font-size:.88rem;color:var(--ink-2)}
+.rc-caveat a{color:var(--accent);font-weight:600}
+.rc-law{margin:0;font-size:.82rem;color:var(--ink-3)}
+
+.svc-sec{margin-top:4.5rem}
+.svc-sec>h2{margin:0 0 .5rem;max-width:28ch;font:500 clamp(1.6rem,3vw,2.2rem)/1.15 var(--display)}
+.lead2{margin:0 0 1.5rem;max-width:62ch;font-size:1.02rem;color:var(--ink-2)}
+.why{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:1rem 2rem;padding:1.5rem 1.6rem;border-radius:16px;background:var(--panel)}
+@media (max-width:640px){.why{grid-template-columns:minmax(0,1fr)}}
+.why h2{margin:0 0 .5rem;font:500 1.5rem/1.2 var(--display)}
+.why p{margin:0;max-width:64ch;font-size:1rem}
+.rights{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem;margin:0;padding:0;list-style:none;counter-reset:r}
+.rights li{padding:1rem 1.1rem 1.05rem;border-top:3px solid var(--accent);border-radius:0 0 12px 12px;background:var(--panel);counter-increment:r}
+.rights li::before{content:counter(r);display:block;margin-bottom:.35rem;font:500 1.6rem/1 var(--display);color:var(--accent)}
+.rights p{margin:0 0 .45rem;font-size:1rem}
+.rights small,.help small{display:block;font-size:.8rem;color:var(--ink-3)}
+.help{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem;margin:0;padding:0;list-style:none}
+.help li{padding:1.1rem;border:1px solid var(--rule);border-radius:12px}
+.help h3{margin:0 0 .4rem;font:600 1.02rem/1.35 var(--body)}
+.help p{margin:0 0 .4rem;font-size:.98rem;color:var(--ink-2)}
+.help .tel{display:block;margin:.1rem 0 .35rem;font:600 1.6rem/1.2 var(--body);color:var(--ink);text-decoration:none}
+.faq{display:grid;gap:1.25rem;max-width:70ch;margin:0}
+.faq dt{font-weight:600;font-size:1.05rem}
+.faq dd{margin:.3rem 0 0;color:var(--ink-2)}
+.about p{max-width:70ch;color:var(--ink-2)}
+.about h3{margin:1.5rem 0 .5rem;font:600 1rem/1.3 var(--body)}
+.srcs{margin:0;padding-left:1.1rem;max-width:84ch;font-size:.92rem;color:var(--ink-2)}
+.srcs li{margin:.3rem 0}
+.srcs a{color:var(--accent)}
+
+/* ---------- evidence view additions ---------- */
+.ev-intro{padding-top:2.5rem}
+.ev-intro-h{margin:0 0 .9rem;max-width:26ch;font:500 clamp(1.7rem,3.4vw,2.4rem)/1.12 var(--display);letter-spacing:-.01em}
+.ev-sum{margin:0 0 1rem;max-width:68ch;font-size:1rem;color:var(--ink-2)}
+.ev-sum p{margin:0 0 .75rem}
+.muted{font-size:.9rem;color:var(--ink-3)}
+.survey{margin:1.5rem 0 0;padding:1.2rem 0 0;border-top:1px solid var(--ink)}
+.sv-h{margin:0 0 .9rem;font:600 1rem/1.3 var(--body)}
+.sv-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.sv-tile{padding:.2rem 1.1rem 1rem 0}
+.sv-tile+.sv-tile{padding-left:1.1rem;border-left:1px solid var(--rule)}
+.sv-tile b{display:block;font-size:1.75rem;font-weight:600;line-height:1.15}
+.sv-l{display:block;margin:.3rem 0;font-size:.92rem;color:var(--ink)}
+.sv-s{display:block;font-size:.82rem;color:var(--ink-3)}
+@media (max-width:860px){.sv-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.sv-tile:nth-child(3){padding-left:0;border-left:0}.sv-tile:nth-child(n+3){padding-top:.9rem;border-top:1px solid var(--rule)}}
+@media (max-width:480px){.sv-tiles{grid-template-columns:minmax(0,1fr)}.sv-tile,.sv-tile+.sv-tile{padding-left:0;border-left:0}.sv-tile+.sv-tile{padding-top:.9rem;border-top:1px solid var(--rule)}}
+.sv-src{margin:.8rem 0 0;max-width:84ch;font-size:.82rem;color:var(--ink-3)}
+.sv-src a{color:inherit}
+.subnav{display:flex;gap:1.25rem;overflow-x:auto;padding-top:1.75rem;font-size:.85rem;scrollbar-width:none}
+.subnav a{padding:.4rem 0;border-bottom:2px solid transparent;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.subnav a:hover{border-bottom-color:var(--ink);color:var(--ink)}
+.ev-h1{margin:0 0 18px;max-width:21ch;font:500 clamp(30px,4.6vw,50px)/1.05 var(--display);letter-spacing:-.018em;text-wrap:balance;font-variation-settings:"opsz" 72}
+.foot2 p{max-width:92ch}
+</style>
+</head>
+<body>
+<a class="skip" href="#main"><span class="l-vi" lang="vi">Đến nội dung chính</span><span class="l-en" lang="en">Skip to content</span></a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand2" href="#service"><b>Một lần là xong</b><span class="l-vi" lang="vi">Hướng dẫn làm thủ tục sau sáp nhập</span><span class="l-en" lang="en">Post-merger service guide</span></a>
+    <nav class="tabs" aria-label="Views">
+      <a class="tab" data-view="service" href="#service" aria-current="page"><span class="l-vi" lang="vi">Làm thủ tục</span><span class="l-en" lang="en">Get it done</span></a>
+      <a class="tab" data-view="evidence" href="#evidence"><span class="l-vi" lang="vi">Bằng chứng</span><span class="l-en" lang="en">Evidence</span></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" id="langSw" role="group" aria-label="Ngôn ngữ / Language">
+        <button type="button" data-l="vi" aria-pressed="true" lang="vi">VI</button>
+        <button type="button" data-l="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <button type="button" class="bigbtn" id="bigBtn" aria-pressed="false"><span aria-hidden="true">A+</span><span class="vh"><span class="l-vi" lang="vi">Chữ lớn</span><span class="l-en" lang="en">Larger text</span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div id="view-service" class="view">
+<section class="wrap svc-hero" id="service" aria-labelledby="svcH1">
+  <p class="eyebrow"><span class="l-vi" lang="vi">Từ 1/7/2025 · 34 tỉnh, thành phố · 3.321 xã, phường, đặc khu · không còn cấp huyện</span><span class="l-en" lang="en">Since 1 July 2025 · 34 provinces · 3,321 communes and wards · no district tier</span></p>
+  <h1 id="svcH1"><span class="l-vi" lang="vi">Đi đúng nơi, mang đủ giấy tờ, một lần là xong</span><span class="l-en" lang="en">The right office, the right papers, one trip</span></h1>
+  <p class="svc-deck"><span class="l-vi" lang="vi">Cấp huyện không còn, nhiều thủ tục đã chuyển về xã, phường. Chọn tỉnh cũ của bạn và việc cần làm để biết nộp ở đâu, cần chuẩn bị gì và bạn có quyền gì tại quầy.</span><span class="l-en" lang="en">With the district tier gone, many procedures moved to communes and wards. Pick your former province and what you need to do to see where to file, what to prepare and what you are entitled to at the counter.</span></p>
+  <p class="indep"><span class="l-vi" lang="vi">Công cụ độc lập phục vụ nghiên cứu, không phải trang của cơ quan nhà nước. Căn cứ pháp lý đối chiếu đến ngày 15/11/2026.</span><span class="l-en" lang="en">An independent research tool, not a government website. Legal references checked on 15 November 2026.</span></p>
+</section>
+
+<section class="wrap" id="where">
+  <div class="tool-grid">
+    <div class="tool-in">
+      <div class="step">
+        <label class="step-lab" for="svProv"><span class="step-n" aria-hidden="true">1</span><span><span class="l-vi" lang="vi">Trước 1/7/2025, bạn ở tỉnh nào?</span><span class="l-en" lang="en">Which province did you live in before 1 July 2025?</span></span></label>
+        <select id="svProv" class="big-select"></select>
+      </div>
+      <fieldset class="step" id="procedure">
+        <legend class="step-lab"><span class="step-n" aria-hidden="true">2</span><span><span class="l-vi" lang="vi">Bạn cần làm gì?</span><span class="l-en" lang="en">What do you need to do?</span></span></legend>
+        <div id="svProcs" class="procs"></div>
+      </fieldset>
+      <p class="example" id="svExample"><span class="l-vi" lang="vi">Đang hiển thị ví dụ: Bắc Kạn, đăng ký khai sinh. Hãy chọn tỉnh và việc của bạn.</span><span class="l-en" lang="en">Showing an example: Bắc Kạn and birth registration. Choose your own province and task.</span></p>
+      <p class="helper-note"><span class="l-vi" lang="vi">Dành cho người hỗ trợ, như tổ công nghệ số cộng đồng: chọn cùng người dân, rồi sao chép danh sách để gửi qua Zalo hoặc bấm Đọc to.</span><span class="l-en" lang="en">For helpers such as community digital teams: choose together with the resident, then copy the checklist to send by message, or press Read aloud.</span></p>
+    </div>
+    <div class="tool-out">
+      <div id="svProvOut"></div>
+      <div id="svResult"></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap svc-sec" id="why" aria-labelledby="whyH">
+  <div class="why">
+    <div>
+      <h2 id="whyH"><span class="l-vi" lang="vi">Vì sao có hướng dẫn này</span><span class="l-en" lang="en">Why this guide exists</span></h2>
+      <p><span class="l-vi" lang="vi">Một khảo sát toàn quốc đầu năm 2026 cho thấy sau sáp nhập, 11,26% người làm thủ tục cấp xã phải đi nhiều nơi, qua nhiều cửa (2,81% ở kỳ 2023–2024). Với sổ đỏ, tỷ lệ nhận kết quả đúng hẹn giảm từ 83,1% xuống 71,1%. Chuẩn bị đúng ngay từ đầu giúp tránh phải quay lại.</span><span class="l-en" lang="en">A national survey in early 2026 found that after the merger 11.26% of people doing a commune procedure had to visit several places or windows (2.81% in the 2023–2024 round). For land certificates, on-time results fell from 83.1% to 71.1%. Preparing right the first time avoids a second trip.</span></p>
+    </div>
+    <a class="btn-line" href="#evidence"><span class="l-vi" lang="vi">Xem bằng chứng</span><span class="l-en" lang="en">See the evidence</span><span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="wrap svc-sec" id="rights" aria-labelledby="rightsH">
+  <h2 id="rightsH"><span class="l-vi" lang="vi">Quyền của bạn khi làm thủ tục</span><span class="l-en" lang="en">Your rights when you file</span></h2>
+  <p class="lead2"><span class="l-vi" lang="vi">Những điều quy định hiện hành bảo đảm khi bạn làm thủ tục tại bộ phận một cửa, theo thứ tự từ lúc nộp đến khi nhận kết quả.</span><span class="l-en" lang="en">What the current rules guarantee when you file at a one-stop desk, in order from filing to getting the result.</span></p>
+  <ol class="rights">
+    <li><p><span class="l-vi" lang="vi">Nhận Giấy tiếp nhận hồ sơ và hẹn trả kết quả, có mã hồ sơ để tra cứu.</span><span class="l-en" lang="en">You get a receipt with your appointment date and a file code you can track.</span></p><small>Nghị định 118/2025/NĐ-CP</small></li>
+    <li><p><span class="l-vi" lang="vi">Nếu hồ sơ còn thiếu, bạn nhận Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ nêu rõ lý do. Hãy đề nghị ghi đủ mọi thứ còn thiếu để chỉ quay lại một lần.</span><span class="l-en" lang="en">If your file is incomplete, you get a written request that states the reason. Ask for everything missing to be listed so you only come back once.</span></p><small>Nghị định 118/2025/NĐ-CP</small></li>
+    <li><p><span class="l-vi" lang="vi">Từ 5/8/2026, cơ quan phải tự khai thác dữ liệu đã có trong các cơ sở dữ liệu thay cho giấy tờ tương ứng, nên bạn không phải nộp lại.</span><span class="l-en" lang="en">Since 5 August 2026, agencies must use data already held in government databases instead of asking you for the matching papers again.</span></p><small>Nghị định 309/2026/NĐ-CP, sửa đổi Nghị định 118/2025/NĐ-CP</small></li>
+    <li><p><span class="l-vi" lang="vi">Cán bộ không được kéo dài thời gian giải quyết, tự ý yêu cầu thêm giấy tờ hay thu thêm tiền trái quy định. Chỉ nộp phí, lệ phí có trong danh mục và giữ biên lai.</span><span class="l-en" lang="en">Staff may not drag out your file, demand papers the rules do not require or charge more than the rules allow. Pay only listed fees and keep the receipt.</span></p><small>Nghị định 118/2025/NĐ-CP</small></li>
+    <li><p><span class="l-vi" lang="vi">Nếu trễ hẹn, cơ quan giải quyết phải xin lỗi bằng văn bản và hẹn lại ngày trả kết quả.</span><span class="l-en" lang="en">If your result is late, the agency must apologise in writing and give you a new date.</span></p><small>Nghị định 118/2025/NĐ-CP</small></li>
+    <li><p><span class="l-vi" lang="vi">Giấy tờ cấp trước khi sắp xếp vẫn có giá trị đến khi hết hạn. Không ai được buộc bạn đổi chỉ vì tên địa phương thay đổi; đổi thẻ căn cước vì lý do này là tùy bạn.</span><span class="l-en" lang="en">Papers issued before the reorganisation stay valid until they expire. Nobody may make you replace them only because a place name changed; replacing your ID card for this reason is your choice.</span></p><small>Nghị quyết 190/2025/QH15, Điều 10; Luật Căn cước 2023, Điều 24</small></li>
+    <li><p><span class="l-vi" lang="vi">Phản ánh, kiến nghị về thủ tục: mục Phản ánh, kiến nghị trên dichvucong.gov.vn, hoặc tổng đài 1800 1096.</span><span class="l-en" lang="en">Feedback on a procedure: the Feedback section of dichvucong.gov.vn, or the hotline 1800 1096.</span></p><small>Quyết định 31/2021/QĐ-TTg, Điều 40</small></li>
+  </ol>
+</section>
+
+<section class="wrap svc-sec" id="help" aria-labelledby="helpH">
+  <h2 id="helpH"><span class="l-vi" lang="vi">Nhờ hỗ trợ</span><span class="l-en" lang="en">Get help</span></h2>
+  <ul class="help">
+    <li><h3><span class="l-vi" lang="vi">Trung tâm Phục vụ hành chính công xã, phường</span><span class="l-en" lang="en">Your commune’s public administrative service centre</span></h3><p><span class="l-vi" lang="vi">Bộ phận một cửa có nhiệm vụ hướng dẫn bạn chuẩn bị hồ sơ. Trung tâm có thể đặt thêm điểm tiếp nhận ở các khu vực trong xã.</span><span class="l-en" lang="en">The one-stop desk is there to help you prepare your file. Centres may run extra reception points around the commune.</span></p><small>Nghị định 118/2025/NĐ-CP</small></li>
+    <li><h3><span class="l-vi" lang="vi">Tổ công nghệ số cộng đồng</span><span class="l-en" lang="en">Community digital technology teams</span></h3><p><span class="l-vi" lang="vi">Ở thôn, ấp, tổ dân phố có tổ công nghệ số cộng đồng hướng dẫn cài VNeID và nộp hồ sơ trực tuyến. Hỏi trưởng thôn hoặc tổ trưởng tổ dân phố.</span><span class="l-en" lang="en">Villages and residential groups have volunteer teams who help with VNeID and online filing. Ask your village or residential-group head.</span></p></li>
+    <li><h3><span class="l-vi" lang="vi">Tổng đài Cổng Dịch vụ công quốc gia</span><span class="l-en" lang="en">National Public Service Portal hotline</span></h3><a class="tel" href="tel:18001096">1800 1096</a><p><span class="l-vi" lang="vi">Gọi miễn phí khi gặp lỗi lúc nộp hồ sơ trực tuyến.</span><span class="l-en" lang="en">Free to call if online filing goes wrong.</span></p></li>
+    <li><h3><span class="l-vi" lang="vi">Miễn lệ phí hộ tịch</span><span class="l-en" lang="en">Civil-status fee waivers</span></h3><p><span class="l-vi" lang="vi">Người thuộc hộ nghèo, người khuyết tật và người thuộc gia đình có công với cách mạng được miễn lệ phí đăng ký hộ tịch.</span><span class="l-en" lang="en">Poor households, people with disabilities and families of people with meritorious service pay no civil-status registration fees.</span></p><small>Luật Hộ tịch 2014, Điều 11</small></li>
+  </ul>
+</section>
+
+<section class="wrap svc-sec" id="faq" aria-labelledby="faqH">
+  <h2 id="faqH"><span class="l-vi" lang="vi">Câu hỏi thường gặp</span><span class="l-en" lang="en">Common questions</span></h2>
+  <dl class="faq">
+    <div><dt><span class="l-vi" lang="vi">Tôi có phải đổi thẻ căn cước, sổ đỏ vì địa chỉ mới không?</span><span class="l-en" lang="en">Do I have to replace my ID card or land certificate because my address changed?</span></dt><dd><span class="l-vi" lang="vi">Không bắt buộc. Giấy tờ đã cấp vẫn dùng được đến khi hết hạn; bạn có thể đổi khi có nhu cầu.</span><span class="l-en" lang="en">No. Papers already issued stay valid until they expire; you can replace them if you want to.</span></dd></div>
+    <div><dt><span class="l-vi" lang="vi">Địa chỉ mới của tôi được ghi thế nào?</span><span class="l-en" lang="en">How is my new address written?</span></dt><dd><span class="l-vi" lang="vi">Địa chỉ nay chỉ còn hai cấp: xã, phường hoặc đặc khu, rồi đến tỉnh, thành phố. Thông tin cư trú trên VNeID được cập nhật theo đơn vị hành chính mới.</span><span class="l-en" lang="en">Addresses now have two levels: commune, ward or special zone, then province or city. Residence details in VNeID follow the new units.</span></dd></div>
+    <div><dt><span class="l-vi" lang="vi">Tôi có phải lên tỉnh để làm thủ tục không?</span><span class="l-en" lang="en">Do I have to travel to the provincial centre?</span></dt><dd><span class="l-vi" lang="vi">Phần lớn thủ tục thường gặp được làm tại xã, phường hoặc trực tuyến. Một số việc vẫn do cơ quan cấp tỉnh giải quyết, ví dụ một số trường hợp cấp sổ đỏ; hãy hỏi Trung tâm Phục vụ hành chính công xã trước.</span><span class="l-en" lang="en">Most everyday procedures are handled in your commune or ward, or online. Some still go to provincial bodies, such as some land certificates; ask your commune service centre first.</span></dd></div>
+  </dl>
+</section>
+
+<section class="wrap svc-sec about" id="about" aria-labelledby="aboutH">
+  <h2 id="aboutH"><span class="l-vi" lang="vi">Về hướng dẫn này</span><span class="l-en" lang="en">About this guide</span></h2>
+  <p><span class="l-vi" lang="vi">Một lần là xong là công cụ độc lập đi kèm một bài nghiên cứu về cải cách chính quyền địa phương hai cấp. Trang không phải của cơ quan nhà nước và không gửi đi thông tin bạn chọn; lựa chọn chỉ lưu trong trình duyệt của bạn. Quy định về phân cấp đang thay đổi nhanh; khi có khác biệt, thông tin trên Cổng Dịch vụ công quốc gia và tại Trung tâm Phục vụ hành chính công là căn cứ.</span><span class="l-en" lang="en">Một lần là xong (“done in one trip”) is an independent companion to a research paper on the two-tier local government reform. It is not a government website and sends nothing you select anywhere; your choices stay in your browser. Decentralisation rules are changing quickly; where they differ, the National Public Service Portal and your service centre are authoritative.</span></p>
+  <h3><span class="l-vi" lang="vi">Nguồn chính</span><span class="l-en" lang="en">Main sources</span></h3>
+  <ul class="srcs">
+    <li>Nghị định 118/2025/NĐ-CP <span class="l-vi" lang="vi">về cơ chế một cửa, một cửa liên thông, sửa đổi bởi Nghị định 367/2025/NĐ-CP và Nghị định 309/2026/NĐ-CP.</span><span class="l-en" lang="en">on the one-stop mechanism, amended by Decrees 367/2025/NĐ-CP and 309/2026/NĐ-CP.</span></li>
+    <li>Nghị định 120/2025/NĐ-CP, 140/2025/NĐ-CP, 151/2025/NĐ-CP, 168/2025/NĐ-CP, 49/2026/NĐ-CP <span class="l-vi" lang="vi">về phân định thẩm quyền trong tư pháp, xây dựng, đất đai và đăng ký kinh doanh.</span><span class="l-en" lang="en">on the division of powers for civil status, construction, land and business registration.</span></li>
+    <li>Luật Hộ tịch 2014; Luật Cư trú 2020; Luật Căn cước 2023; Nghị quyết 190/2025/QH15.</li>
+    <li><span class="l-vi" lang="vi">Học viện Chính trị quốc gia Hồ Chí Minh và Viện Nghiên cứu Phát triển Mekong (MDRI), đánh giá nhanh cung ứng dịch vụ công trong bối cảnh chính quyền địa phương hai cấp, khảo sát tháng 1–3/2026 với 4.932 người:</span><span class="l-en" lang="en">Ho Chi Minh National Academy of Politics and the Mekong Development Research Institute (MDRI), rapid assessment of public service delivery under two-tier local government, survey of 4,932 people, January–March 2026:</span> <a href="https://hatinh.gov.vn/Files/Others/e9c85e31-fc59-46f0-b50b-489a6a3bc0a7/2.nhginhanh_Thchinchnhquynaphng2cp__HCMA_MDRI_VN.pdf" target="_blank" rel="noopener"><span class="l-vi" lang="vi">báo cáo (PDF)</span><span class="l-en" lang="en">report (PDF, Vietnamese)</span></a>.</li>
+    <li><span class="l-vi" lang="vi">Điểm SIPAS: báo cáo SIPAS 2022–2025 của Bộ Nội vụ, tính lại theo ranh giới năm 2025 bằng dân số Tổng điều tra giữa kỳ 1/4/2024.</span><span class="l-en" lang="en">SIPAS scores: Ministry of Home Affairs SIPAS reports 2022–2025, rebuilt on the 2025 boundaries with 1 April 2024 census population.</span></li>
+  </ul>
+</section>
+</div>
+<div id="view-evidence" class="view" lang="en" hidden>
+<section class="wrap ev-intro" id="evidence" aria-labelledby="evIntroH">
+  <p class="eyebrow"><span class="l-vi" lang="vi">Bằng chứng</span><span class="l-en" lang="en">Evidence</span></p>
+  <h2 class="ev-intro-h" id="evIntroH"><span class="l-vi" lang="vi">Vì sao dịch vụ công sau sáp nhập cần được theo dõi trên ranh giới cố định</span><span class="l-en" lang="en">Why services after the merger need fixed-boundary monitoring</span></h2>
+  <div class="ev-sum l-vi" lang="vi">
+    <p>Tóm tắt bài báo: với cùng số liệu SIPAS năm 2024, gộp 63 tỉnh thành 34 đơn vị làm độ lệch chuẩn có trọng số dân số giảm từ 2,69 xuống 2,29 điểm, chỉ do phép tính trung bình. So sánh trên cùng ranh giới năm 2025, mức hài lòng giảm 0,45 điểm ở 23 đơn vị sáp nhập và 2,04 điểm ở 11 đơn vị không sáp nhập; chênh lệch +1,59 điểm (khoảng tin cậy 95%: 0,28 đến 2,91), rõ nhất ở chỉ số thành phần cung ứng dịch vụ. Khoảng cách giữa các đơn vị nới rộng từ 2,29 lên 2,55 trong cả hai nhóm; nếu bỏ tác động của sáp nhập, khoảng cách còn rộng hơn một chút (2,58). Không phát hiện mối liên hệ giữa mức thay đổi và khoảng cách tới trung tâm hành chính mới (+1,04 điểm mỗi 100 km; khoảng tin cậy 95%: −4,71 đến +6,08).</p>
+    <p class="muted">Biểu đồ, bảng và phần phương pháp bên dưới được trình bày bằng tiếng Anh.</p>
+  </div>
+  <p class="ev-sum l-en" lang="en">Two kinds of evidence sit behind the guide: a national citizen survey of services after the merger, and the paper’s analysis of SIPAS satisfaction scores rebuilt on the 2025 boundaries, which follows below.</p>
+  <div class="survey">
+    <h3 class="sv-h"><span class="l-vi" lang="vi">Khảo sát người dân, tháng 1–3/2026, so với kỳ 2023–2024</span><span class="l-en" lang="en">Citizen survey, January–March 2026, against the 2023–2024 round</span></h3>
+    <div class="sv-tiles">
+      <div class="sv-tile"><b><span class="l-vi" lang="vi">11,26%</span><span class="l-en" lang="en">11.26%</span></b><span class="sv-l"><span class="l-vi" lang="vi">phải đi nhiều nơi, qua nhiều cửa hoặc gặp nhiều người khi làm thủ tục cấp xã</span><span class="l-en" lang="en">had to visit several places, windows or officials for a commune procedure</span></span><span class="sv-s"><span class="l-vi" lang="vi">2,81% ở kỳ trước</span><span class="l-en" lang="en">2.81% before</span></span></div>
+      <div class="sv-tile"><b><span class="l-vi" lang="vi">71,1%</span><span class="l-en" lang="en">71.1%</span></b><span class="sv-l"><span class="l-vi" lang="vi">người làm sổ đỏ nhận kết quả đúng hẹn</span><span class="l-en" lang="en">of land-certificate applicants got their result on time</span></span><span class="sv-s"><span class="l-vi" lang="vi">83,1% ở kỳ trước; 26,3% phải đi nhiều cửa</span><span class="l-en" lang="en">83.1% before; 26.3% went through several windows</span></span></div>
+      <div class="sv-tile"><b><span class="l-vi" lang="vi">21,8%</span><span class="l-en" lang="en">21.8%</span></b><span class="sv-l"><span class="l-vi" lang="vi">từng dùng Cổng Dịch vụ công quốc gia</span><span class="l-en" lang="en">had used the National Public Service Portal</span></span><span class="sv-s"><span class="l-vi" lang="vi">27,0% gặp khó khăn khi dùng; 33,7% lo ngại bảo mật</span><span class="l-en" lang="en">27.0% found it hard to use; 33.7% worried about privacy</span></span></div>
+      <div class="sv-tile"><b><span class="l-vi" lang="vi">6,88% / 41,18%</span><span class="l-en" lang="en">6.88% / 41.18%</span></b><span class="sv-l"><span class="l-vi" lang="vi">dùng Cổng: nhóm thu nhập thấp nhất / cao nhất</span><span class="l-en" lang="en">portal use, poorest / richest income quartile</span></span><span class="sv-s"><span class="l-vi" lang="vi">người khuyết tật: 6,4%</span><span class="l-en" lang="en">people with disabilities: 6.4%</span></span></div>
+    </div>
+    <p class="sv-src"><span class="l-vi" lang="vi">Nguồn: Học viện Chính trị quốc gia Hồ Chí Minh và Viện Nghiên cứu Phát triển Mekong (MDRI); khảo sát qua điện thoại 4.932 người, trong đó 299 người khuyết tật; công bố ngày 12/5/2026. Số liệu này không thuộc bài báo; bằng chứng của bài báo nằm ở phần dưới.</span><span class="l-en" lang="en">Source: Ho Chi Minh National Academy of Politics and the Mekong Development Research Institute (MDRI); telephone survey of 4,932 people including 299 with disabilities; released 12 May 2026. These figures are not from the paper; the paper’s own evidence follows.</span> <a href="https://hatinh.gov.vn/Files/Others/e9c85e31-fc59-46f0-b50b-489a6a3bc0a7/2.nhginhanh_Thchinchnhquynaphng2cp__HCMA_MDRI_VN.pdf" target="_blank" rel="noopener"><span class="l-vi" lang="vi">Báo cáo (PDF)</span><span class="l-en" lang="en">Report (PDF, Vietnamese)</span></a></p>
+  </div>
+</section>
+<nav class="wrap subnav" aria-label="Evidence sections"><a href="#trap">Averaging trap</a><a href="#change">2024 to 2025</a><a href="#estimates">Estimates</a><a href="#distance">Distance</a><a href="#units">Unit monitor</a><a href="#method">Method</a></nav>
+<section class="hero wrap" id="trap" aria-labelledby="h1">
+  <p class="eyebrow">Viet Nam · 2025 two-tier reform · SIPAS satisfaction scores</p>
+  <h2 id="h1" class="ev-h1">Averaging 63 provinces into 34 shrinks the gaps by arithmetic alone</h2>
+  <p class="deck">On 1 July 2025 Viet Nam merged 52 provinces into 23 units and left 11 unchanged. Laid over the same 2024 SIPAS survey, the new boundaries cut the population-weighted spread of scores from 2.69 to 2.29 points before anything else changed. This explorer rebuilds every score on the 2025 boundaries, so that 2024 and 2025 are compared like with like.</p>
+
+  <figure class="hero-fig">
+    <div class="hero-controls">
+      <button type="button" class="btn" id="mergeBtn" aria-pressed="false">Merge into 34 units</button>
+      <div class="readout">
+        <span class="lab" id="roLabel">Spread across 63 provinces</span>
+        <b id="roSD">2.69</b>
+        <span class="sub" id="roRange">range 12.93</span>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span class="item"><span class="sw m"></span>Merged in 2025</span>
+        <span class="item"><span class="sw n"></span>Unmerged</span>
+      </div>
+    </div>
+    <div id="heroChart" class="chart"></div>
+    <figcaption>Top row: the 63 former provinces at their 2024 SIPAS score (0–100 scale). Bottom row: the 34 units, each at the population-weighted mean of its former provinces. Lines join each province to its unit. Dot area grows with 2024 population; the smallest provinces are drawn at a minimum size. Spread is the population-weighted standard deviation. Select a dot to see that unit below.</figcaption>
+  </figure>
+
+  <div class="below">
+    <div class="hides">
+      <h2>What the 34-unit view hides</h2>
+      <p>Weighted by population, the variance across the 63 provinces splits exactly into the variance across the 34 units plus the variance inside merged units. The last term disappears from any table of 34 scores.</p>
+      <div class="identity" role="group" aria-label="7.222 equals 5.222 plus 2.000">
+        <div><b>7.222</b><span>across 63 provinces</span></div>
+        <i aria-hidden="true">=</i>
+        <div><b>5.222</b><span>across 34 units</span></div>
+        <i aria-hidden="true">+</i>
+        <div><b>2.000</b><span>inside merged units</span></div>
+      </div>
+      <p>Former provinces inside one unit were up to 12.06 points apart in 2024 (Thái Nguyên at 90.23 and Bắc Kạn at 78.17). In 9 of the 29 absorbed provinces, residents rated services higher than in the province that now hosts their centre:</p>
+      <div id="absList" class="abs-list"></div>
+    </div>
+    <div class="detail-col">
+      <div class="detail-head">
+        <label for="unitSel">Unit details</label>
+        <select id="unitSel"></select>
+      </div>
+      <div id="detail"></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" aria-label="Findings at a glance">
+  <div class="tiles">
+    <div class="tile"><div class="lab">Merged minus unmerged, 2024 to 2025</div><div class="val">+1.59 points</div><div class="note">95% CI 0.28 to 2.91. Merged units fell 0.45 points, unmerged units 2.04.</div></div>
+    <div class="tile"><div class="lab">Spread on fixed boundaries</div><div class="val">2.29 → 2.55</div><div class="note">Weighted standard deviation, 2024 to 2025. It widened inside both groups.</div></div>
+    <div class="tile"><div class="lab">2025 spread without the merger effect</div><div class="val">2.58</div><div class="note">Slightly wider than observed, so the mergers did not drive the widening.</div></div>
+    <div class="tile"><div class="lab">Distance penalty in merged units</div><div class="val">Not detected</div><div class="note">+1.04 points per 100 km; 95% CI −4.71 to +6.08.</div></div>
+  </div>
+</section>
+
+<section class="block wrap" id="change" aria-labelledby="h-change">
+  <h2 id="h-change"><span class="num">1</span>Change from 2024 to 2025 on the 2025 boundaries</h2>
+  <p class="lead">Each row is one unit. The open dot is its 2024 score, rebuilt from former provinces with 2024 census weights; the filled dot is its 2025 score. Merged units fell by 0.45 points on average and unmerged units by 2.04. Take the estimated merger effect out of the 2025 scores to see what it did to the spread.</p>
+  <div class="controls">
+    <div class="seg" id="cfSeg" role="radiogroup" aria-label="2025 scores shown">
+      <button type="button" role="radio" aria-checked="true" data-beta="0">Observed 2025</button>
+      <button type="button" role="radio" aria-checked="false" data-beta="1.592">Without merger effect (−1.59)</button>
+      <button type="button" role="radio" aria-checked="false" data-beta="2.189">Without weighted effect (−2.19)</button>
+    </div>
+    <div class="field"><label for="orderSel">Order rows</label>
+      <select id="orderSel"><option value="change">By change</option><option value="s25">By 2025 score</option><option value="name">By name</option></select>
+    </div>
+  </div>
+  <div class="stats">
+    <div><span>Spread in 2025</span><b id="cfSD">2.55</b><em>2024: 2.29</em></div>
+    <div><span>Range in 2025</span><b id="cfRange">13.20</b><em>2024: 11.47</em></div>
+    <div><span>Mean change, merged</span><b id="cfMerged">−0.45</b><em>23 units</em></div>
+    <div><span>Mean change, unmerged</span><b id="cfUnmerged">−2.04</b><em>11 units</em></div>
+    <div><span>Difference</span><b id="cfDiff">+1.59</b><em>merged minus unmerged</em></div>
+  </div>
+  <div class="legend" aria-hidden="true">
+    <span class="item"><span class="sw m"></span>Merged</span>
+    <span class="item"><span class="sw n"></span>Unmerged</span>
+    <span class="item"><span class="sw o"></span>2024, rebuilt</span>
+    <span class="item"><span class="sw f"></span>2025</span>
+    <span class="item"><span class="sw tk"></span>Observed 2025, when the effect is removed</span>
+  </div>
+  <div id="dumbChart" class="chart"></div>
+  <p class="note">Taking out the merger effect raises the 2025 spread to 2.58, or 2.64 with the population-weighted effect. The mergers therefore narrowed the spread slightly and did not drive the widening. This counterfactual removes the same effect from every merged unit, so uneven effects could still add to dispersion among merged units.</p>
+
+  <h3>Where the widening came from</h3>
+  <div class="tablewrap">
+    <table class="data decomp">
+      <caption class="vh">Population-weighted variance of SIPAS scores within and between groups</caption>
+      <thead><tr><th scope="col">Population-weighted variance</th><th scope="col">2024</th><th scope="col">2025</th><th scope="col">Change</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Within the merged group (share × variance)</th><td>3.510</td><td>4.927</td><td>+1.417</td></tr>
+        <tr><th scope="row">Within the unmerged group (share × variance)</th><td>1.202</td><td>1.524</td><td>+0.322</td></tr>
+        <tr><th scope="row">Between the two groups</th><td>0.510</td><td>0.045</td><td>−0.465</td></tr>
+        <tr><th scope="row"><b>Total</b></th><td><b>5.222</b></td><td><b>6.497</b></td><td><b>+1.274</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">The merged group holds 76.6% of the population. Its standard deviation rose from 2.14 to 2.54 and the unmerged group's from 2.27 to 2.55. The between-group term almost vanished because unmerged units started higher (85.71 against 84.02, population-weighted) and fell further (to 83.17 against 83.67). Components may not sum exactly because of rounding.</p>
+</section>
+
+<section class="block wrap" id="estimates" aria-labelledby="h-est">
+  <h2 id="h-est"><span class="num">2</span>How firm is the 1.59-point gain?</h2>
+  <p class="lead">Each line is a 95% interval from a restricted wild-cluster bootstrap (Webb weights, 99,999 draws, each unit its own cluster). The shaded band marks ±1 point, the paper's threshold for a meaningful effect; one point is about 0.44 of the 2024 spread across units.</p>
+  <div id="forest" class="forest"></div>
+  <p class="note">Three of the five robustness checks give 1.47 to 2.19 points with intervals above zero. Dropping the three lowest 2025 scorers makes the estimate borderline (p = 0.0499), and a 2022–2024 baseline makes it imprecise. The gain is clear for service delivery and borderline for policy. Neither placebo year shows a pre-trend. What the estimates rule out, at the 95% level, is an average penalty from merging.</p>
+</section>
+
+<section class="block wrap" id="distance" aria-labelledby="h-dist">
+  <h2 id="h-dist"><span class="num">3</span>Distance to the new centre</h2>
+  <p class="lead">If losing the provincial capital lowered satisfaction, merged units whose residents now live farther from the centre should have fallen more. D is the population-weighted straight-line distance from each former capital to the new administrative centre, counted as zero for the province that kept it.</p>
+  <div class="stats">
+    <div><span>Slope</span><b>+1.04</b><em>points per 100 km</em></div>
+    <div><span>95% interval</span><b>−4.71 to +6.08</b><em>p = 0.667</em></div>
+    <div><span>Units</span><b>23</b><em>merged only</em></div>
+    <div><span>Absorbed provinces</span><b>69.1 km</b><em>mean move of the capital; 145.8 km at most</em></div>
+  </div>
+  <div id="distChart" class="chart"></div>
+  <p class="note">No gradient is detected, but the interval is wide enough to hide a sizeable penalty. Unmerged units are left out because their D is zero, which would mix distance with merger status (that all-unit slope, +3.12, is confounded). SIPAS publishes one 2025 score per unit, so absorbed provinces cannot yet be followed on their own; sampling by former province in 2026–2027 would allow that test.</p>
+</section>
+
+<section class="block wrap" id="units" aria-labelledby="h-units">
+  <h2 id="h-units"><span class="num">4</span>Unit monitor</h2>
+  <p class="lead">All 34 units on fixed boundaries, steepest falls first. The paper recommends aiming transition support at measured falls rather than at merger status: the four steepest falls were in unmerged provinces. Decision 706/QĐ-TTg of 21 April 2026 sets out the plan for reviewing the first year of the new arrangement. Select a row to see its former provinces.</p>
+  <div class="controls">
+    <div class="seg" id="filterSeg" role="radiogroup" aria-label="Units shown">
+      <button type="button" role="radio" aria-checked="true" data-f="all">All 34</button>
+      <button type="button" role="radio" aria-checked="false" data-f="m">Merged 23</button>
+      <button type="button" role="radio" aria-checked="false" data-f="n">Unmerged 11</button>
+    </div>
+  </div>
+  <div class="tablewrap">
+    <table class="data" id="unitTable">
+      <caption class="vh">SIPAS scores of the 34 units on 2025 boundaries; column headers sort the table</caption>
+      <thead><tr>
+        <th scope="col" aria-sort="none"><button type="button" data-k="n">Unit <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="m">Type <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="pop">Population (m) <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="D">D (km) <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="s24">2024 rebuilt <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="s25">2025 <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="ascending"><button type="button" data-k="d">Change <span class="arr">↑</span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="gap">Gap inside, 2024 <span class="arr"></span></button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-k="rk">Rank 2025 <span class="arr"></span></button></th>
+      </tr></thead>
+      <tbody id="unitBody"></tbody>
+    </table>
+  </div>
+  <p class="note">D: population-weighted distance from former capitals to the new centre. Gap inside: highest minus lowest former-province score in 2024. Flags in this table are measured changes, not causal effects.</p>
+</section>
+
+<section class="block wrap" id="method" aria-labelledby="h-method">
+  <h2 id="h-method">Method and data</h2>
+  <dl class="defs">
+    <dt>Rebuilt 2024 score</dt>
+    <dd>Each merged unit's 2024 score is the census-weighted mean of its former provinces, Y(u) = Σ w(p) × Y(p), where w(p) is province p's share of the unit's population on 1 April 2024. Unmerged units keep their published score.</dd>
+    <dt>Change</dt>
+    <dd>The 2025 score minus the rebuilt 2024 score, on the same 2025 boundaries.</dd>
+    <dt>Spread</dt>
+    <dd>Standard deviation across units or provinces, each weighted by its 2024 census population. The range is the highest minus the lowest score.</dd>
+    <dt>Merger effect</dt>
+    <dd>Mean change of the 23 merged units minus mean change of the 11 unmerged units (difference-in-differences). Intervals invert a restricted wild-cluster bootstrap test (Webb weights, 99,999 draws) on a 0.01-point grid.</dd>
+    <dt>1-point rule</dt>
+    <dd>An effect counts as meaningful if its 95% interval excludes zero and its size is at least 1 point, about 0.44 of the 2024 spread across units (2.29).</dd>
+    <dt>Distance D</dt>
+    <dd>Great-circle distance from each former provincial capital to the administrative centre named in Decision 759/QĐ-TTg (14 April 2025), averaged with population weights; zero for the host province.</dd>
+    <dt>Survey method</dt>
+    <dd>From 2022 SIPAS adds a 23-criterion policy sub-index to the 16-criterion service sub-index, and the overall score is (23 × policy + 16 × services) ÷ 39. The mean of the rebuilt unit scores fell 7.13 points from 2021 to 2022, so every comparison here starts in 2022.</dd>
+  </dl>
+
+  <h3>Limits</h3>
+  <ul class="limits">
+    <li>One post-reform year; the 2026 round will show whether the gain persists.</li>
+    <li>All 11 unmerged units lie in the north and centre, so they cannot fully stand in for the south.</li>
+    <li>SIPAS records the satisfaction of people who used administrative services. Residents deterred by distance or cost are not observed, so satisfaction is not access.</li>
+    <li>The spread counterfactual removes the same effect from every merged unit.</li>
+    <li>Straight-line distance understates travel time in mountainous and delta provinces.</li>
+  </ul>
+
+  <h3>Sources</h3>
+  <ul class="limits">
+    <li>Ministry of Home Affairs, annual SIPAS reports 2022–2025 (the 2025 report accompanies Decision 429/QĐ-BNV).</li>
+    <li>2024 mid-term population and housing census, reference date 1 April 2024, for population weights.</li>
+    <li>Resolution 202/2025/QH15 of 12 June 2025 on the new provincial units; Decision 759/QĐ-TTg of 14 April 2025 on administrative centres.</li>
+  </ul>
+
+  <h3>Data</h3>
+  <p class="note">The figures on this page come from the paper's audited workbook (version 3): 63 former provinces and 34 units. Copy them to paste into a spreadsheet.</p>
+  <div class="copyrow">
+    <button type="button" class="btn-ghost" id="copyUnits">Copy unit data (34 rows, CSV)</button>
+    <button type="button" class="btn-ghost" id="copyProvs">Copy province data (63 rows, CSV)</button>
+    <span id="copyStatus" role="status"></span>
+  </div>
+  <textarea id="csvFallback" rows="8" readonly hidden aria-label="CSV data to copy"></textarea>
+</section>
+</div>
+</main>
+<footer class="wrap foot2">
+  <p><span class="l-vi" lang="vi">Một lần là xong là công cụ độc lập đi kèm bài báo “Sustainable Local Governance after Viet Nam’s 2025 Two-Tier Reform: Did Province Mergers Widen or Narrow Gaps in Public-Service Access?”. Không phải trang của cơ quan nhà nước.</span><span class="l-en" lang="en">Một lần là xong (“done in one trip”) is an independent companion to the paper “Sustainable Local Governance after Viet Nam’s 2025 Two-Tier Reform: Did Province Mergers Widen or Narrow Gaps in Public-Service Access?”. It is not a government website.</span></p>
+  <p><span class="l-vi" lang="vi">Căn cứ pháp lý đối chiếu đến ngày 15/11/2026. Điểm SIPAS theo thang 0–100.</span><span class="l-en" lang="en">Legal references checked on 15 November 2026. SIPAS scores are on a 0–100 scale.</span></p>
+</footer>
+<div id="live" class="vh" aria-live="polite"></div>
+<noscript><p class="wrap">Trang này cần JavaScript để hiển thị hướng dẫn và biểu đồ. This page needs JavaScript for the guide and the charts.</p></noscript>
+<script>
+(function () {
+  'use strict';
+  const DATA = {"units":[{"id":"hai-phong","n":"Hải Phòng","m":1,"pop":4093167,"D":19.33,"Dx":40.14,"s22":83.808,"s23":89.541,"s24":90.657,"s25":91.12,"d":0.463,"rk":1,"p24":89.781,"p25":91.01,"v24":91.916,"v25":91.26,"host":"hai-phong"},{"id":"quang-ninh","n":"Quảng Ninh","m":0,"pop":1393702,"D":0,"Dx":0,"s22":87.59,"s23":90.61,"s24":90.12,"s25":88.33,"d":-1.79,"rk":2,"p24":89.74,"p25":88.42,"v24":90.666,"v25":88.2,"host":null},{"id":"dong-nai","n":"Đồng Nai","m":1,"pop":4402164,"D":15.51,"Dx":64.38,"s22":77.006,"s23":79.39,"s24":82.328,"s25":87.16,"d":4.832,"rk":3,"p24":82.509,"p25":87.33,"v24":82.068,"v25":86.93,"host":"dong-nai"},{"id":"hung-yen","n":"Hưng Yên","m":1,"pop":3201982,"D":21.9,"Dx":37.13,"s22":83.856,"s23":87.002,"s24":85.784,"s25":85.1,"d":-0.684,"rk":4,"p24":85.951,"p25":85.01,"v24":85.544,"v25":85.22,"host":"hung-yen"},{"id":"hue","n":"Huế","m":0,"pop":1177624,"D":0,"Dx":0,"s22":78.55,"s23":82.28,"s24":85.27,"s25":84.76,"d":-0.51,"rk":5,"p24":85.02,"p25":85.09,"v24":85.629,"v25":84.3,"host":null},{"id":"thai-nguyen","n":"Thái Nguyên","m":1,"pop":1690083,"D":11.95,"Dx":61.48,"s22":84.113,"s23":87.323,"s24":87.885,"s25":84.64,"d":-3.245,"rk":6,"p24":87.851,"p25":84.56,"v24":87.934,"v25":84.76,"host":"thai-nguyen"},{"id":"khanh-hoa","n":"Khánh Hòa","m":1,"pop":1877263,"D":25.45,"Dx":78.34,"s22":78.38,"s23":81.639,"s24":83.498,"s25":84.57,"d":1.072,"rk":7,"p24":82.484,"p25":84.21,"v24":84.956,"v25":85.1,"host":"khanh-hoa"},{"id":"ha-noi","n":"Hà Nội","m":0,"pop":8685607,"D":0,"Dx":0,"s22":80.16,"s23":83.57,"s24":86.5,"s25":84.44,"d":-2.06,"rk":8,"p24":86.51,"p25":86,"v24":86.486,"v25":82.18,"host":null},{"id":"lao-cai","n":"Lào Cai","m":1,"pop":1650404,"D":61.16,"Dx":128.24,"s22":83.918,"s23":88.221,"s24":85.82,"s25":84.41,"d":-1.41,"rk":9,"p24":85.8,"p25":84.15,"v24":85.849,"v25":84.78,"host":"yen-bai"},{"id":"ho-chi-minh-city","n":"Hồ Chí Minh City","m":1,"pop":13573564,"D":10.16,"Dx":59.84,"s22":80.205,"s23":82.964,"s24":85.23,"s25":84.36,"d":-0.87,"rk":10,"p24":85.178,"p25":84.27,"v24":85.305,"v25":84.48,"host":"ho-chi-minh-city"},{"id":"nghe-an","n":"Nghệ An","m":0,"pop":3470988,"D":0,"Dx":0,"s22":82.82,"s23":85.62,"s24":87.87,"s25":84.33,"d":-3.54,"rk":11,"p24":87.81,"p25":84.2,"v24":87.956,"v25":84.53,"host":null},{"id":"lam-dong","n":"Lâm Đồng","m":1,"pop":3320265,"D":62.86,"Dx":118.98,"s22":76.424,"s23":80.118,"s24":82.886,"s25":84.31,"d":1.424,"rk":12,"p24":82.933,"p25":84.27,"v24":82.818,"v25":84.36,"host":"lam-dong"},{"id":"can-tho","n":"Cần Thơ","m":1,"pop":3201143,"D":30.29,"Dx":55.15,"s22":79.563,"s23":82.465,"s24":82.624,"s25":84.05,"d":1.426,"rk":13,"p24":82.401,"p25":83.78,"v24":82.945,"v25":84.44,"host":"can-tho"},{"id":"gia-lai","n":"Gia Lai","m":1,"pop":3145733,"D":69.2,"Dx":133.53,"s22":82.164,"s23":83.787,"s24":83.862,"s25":84.02,"d":0.158,"rk":14,"p24":83.68,"p25":82.76,"v24":84.124,"v25":85.84,"host":"binh-dinh"},{"id":"da-nang","n":"Đà Nẵng","m":1,"pop":2808538,"D":33.36,"Dx":60.86,"s22":77.106,"s23":80.672,"s24":81.432,"s25":83.46,"d":2.028,"rk":15,"p24":81.22,"p25":83.31,"v24":81.737,"v25":83.67,"host":"da-nang"},{"id":"tuyen-quang","n":"Tuyên Quang","m":1,"pop":1728317,"D":59.73,"Dx":113.66,"s22":80.322,"s23":82.572,"s24":84.597,"s25":83.44,"d":-1.157,"rk":16,"p24":84.772,"p25":84.25,"v24":84.345,"v25":82.27,"host":"tuyen-quang"},{"id":"son-la","n":"Sơn La","m":0,"pop":1327430,"D":0,"Dx":0,"s22":82.18,"s23":82.23,"s24":84.05,"s25":83.4,"d":-0.65,"rk":17,"p24":83.99,"p25":83.1,"v24":84.136,"v25":83.84,"host":null},{"id":"ninh-binh","n":"Ninh Bình","m":1,"pop":3812212,"D":21.93,"Dx":32.91,"s22":79.411,"s23":80.624,"s24":83.761,"s25":83.33,"d":-0.431,"rk":18,"p24":83.905,"p25":83.18,"v24":83.554,"v25":83.55,"host":"ninh-binh"},{"id":"dien-bien","n":"Điện Biên","m":0,"pop":653422,"D":0,"Dx":0,"s22":78.63,"s23":80.1,"s24":82.96,"s25":83.31,"d":0.35,"rk":19,"p24":82.88,"p25":83.29,"v24":83.075,"v25":83.34,"host":null},{"id":"ca-mau","n":"Cà Mau","m":1,"pop":2140282,"D":28,"Dx":64.49,"s22":83.725,"s23":82.885,"s24":84.566,"s25":83.27,"d":-1.296,"rk":20,"p24":84.543,"p25":83.13,"v24":84.599,"v25":83.48,"host":"ca-mau"},{"id":"phu-tho","n":"Phú Thọ","m":1,"pop":3654784,"D":20.87,"Dx":56.6,"s22":81.498,"s23":84.735,"s24":84.248,"s25":82.69,"d":-1.558,"rk":21,"p24":84.39,"p25":82.66,"v24":84.044,"v25":82.73,"host":"phu-tho"},{"id":"tay-ninh","n":"Tây Ninh","m":1,"pop":2954777,"D":37.71,"Dx":92.71,"s22":75.728,"s23":78.998,"s24":82.157,"s25":82.32,"d":0.163,"rk":22,"p24":82.113,"p25":82.04,"v24":82.22,"v25":82.73,"host":"long-an"},{"id":"quang-ngai","n":"Quảng Ngãi","m":1,"pop":1855153,"D":39.28,"Dx":121.81,"s22":77.956,"s23":80.887,"s24":81.516,"s25":82.08,"d":0.564,"rk":23,"p24":81.181,"p25":81.91,"v24":81.998,"v25":82.34,"host":"quang-ngai"},{"id":"ha-tinh","n":"Hà Tĩnh","m":0,"pop":1329365,"D":0,"Dx":0,"s22":84.37,"s23":88.97,"s24":85.17,"s25":81.83,"d":-3.34,"rk":24,"p24":85,"p25":83.31,"v24":85.414,"v25":79.7,"host":null},{"id":"vinh-long","n":"Vĩnh Long","m":1,"pop":3363530,"D":33.59,"Dx":54.1,"s22":79.099,"s23":81.877,"s24":83.405,"s25":81.75,"d":-1.655,"rk":25,"p24":83.242,"p25":81.81,"v24":83.639,"v25":81.67,"host":"vinh-long"},{"id":"dak-lak","n":"Đắk Lắk","m":1,"pop":2828119,"D":45.53,"Dx":145.78,"s22":79.683,"s23":80.918,"s24":81.163,"s25":81.53,"d":0.367,"rk":26,"p24":81.113,"p25":81.36,"v24":81.235,"v25":81.77,"host":"dak-lak"},{"id":"an-giang","n":"An Giang","m":1,"pop":3674828,"D":29.56,"Dx":56.85,"s22":79.535,"s23":81.785,"s24":82.955,"s25":81.18,"d":-1.775,"rk":27,"p24":82.588,"p25":81.02,"v24":83.483,"v25":81.42,"host":"kien-giang"},{"id":"dong-thap","n":"Đồng Tháp","m":1,"pop":3396214,"D":37.85,"Dx":80.3,"s22":78.431,"s23":82.442,"s24":83.257,"s25":80.64,"d":-2.617,"rk":28,"p24":83.182,"p25":80.41,"v24":83.365,"v25":80.97,"host":"tien-giang"},{"id":"thanh-hoa","n":"Thanh Hóa","m":0,"pop":3760650,"D":0,"Dx":0,"s22":85.31,"s23":85.29,"s24":84.32,"s25":79.4,"d":-4.92,"rk":29,"p24":84.43,"p25":79.42,"v24":84.162,"v25":79.35,"host":null},{"id":"quang-tri","n":"Quảng Trị","m":1,"pop":1582788,"D":36.86,"Dx":88.57,"s22":78.766,"s23":81.48,"s24":82.398,"s25":79.27,"d":-3.128,"rk":30,"p24":82.485,"p25":79.3,"v24":82.273,"v25":79.23,"host":"quang-binh"},{"id":"bac-ninh","n":"Bắc Ninh","m":1,"pop":3494144,"D":6.9,"Dx":15.62,"s22":78.145,"s23":79.756,"s24":82.058,"s25":79.08,"d":-2.978,"rk":31,"p24":82.08,"p25":79.14,"v24":82.026,"v25":78.99,"host":"bac-giang"},{"id":"cao-bang","n":"Cao Bằng","m":0,"pop":555809,"D":0,"Dx":0,"s22":74.81,"s23":76.26,"s24":80.87,"s25":78.87,"d":-2,"rk":32,"p24":80.95,"p25":78.73,"v24":80.755,"v25":79.08,"host":null},{"id":"lang-son","n":"Lạng Sơn","m":0,"pop":813978,"D":0,"Dx":0,"s22":75.44,"s23":79.3,"s24":79.19,"s25":78.8,"d":-0.39,"rk":33,"p24":78.96,"p25":77.59,"v24":79.521,"v25":80.54,"host":null},{"id":"lai-chau","n":"Lai Châu","m":0,"pop":494626,"D":0,"Dx":0,"s22":79.34,"s23":79.82,"s24":81.51,"s25":77.92,"d":-3.59,"rk":34,"p24":81.49,"p25":78.51,"v24":81.539,"v25":77.07,"host":null}],"provs":[{"id":"ha-noi","n":"Hà Nội","u":"ha-noi","role":"U","pop":8685607,"km":0,"s24":86.5},{"id":"thua-thien-hue","n":"Thừa Thiên Huế","u":"hue","role":"U","pop":1177624,"km":0,"s24":85.27},{"id":"lai-chau","n":"Lai Châu","u":"lai-chau","role":"U","pop":494626,"km":0,"s24":81.51},{"id":"dien-bien","n":"Điện Biên","u":"dien-bien","role":"U","pop":653422,"km":0,"s24":82.96},{"id":"son-la","n":"Sơn La","u":"son-la","role":"U","pop":1327430,"km":0,"s24":84.05},{"id":"lang-son","n":"Lạng Sơn","u":"lang-son","role":"U","pop":813978,"km":0,"s24":79.19},{"id":"quang-ninh","n":"Quảng Ninh","u":"quang-ninh","role":"U","pop":1393702,"km":0,"s24":90.12},{"id":"thanh-hoa","n":"Thanh Hóa","u":"thanh-hoa","role":"U","pop":3760650,"km":0,"s24":84.32},{"id":"nghe-an","n":"Nghệ An","u":"nghe-an","role":"U","pop":3470988,"km":0,"s24":87.87},{"id":"ha-tinh","n":"Hà Tĩnh","u":"ha-tinh","role":"U","pop":1329365,"km":0,"s24":85.17},{"id":"cao-bang","n":"Cao Bằng","u":"cao-bang","role":"U","pop":555809,"km":0,"s24":80.87},{"id":"tuyen-quang","n":"Tuyên Quang","u":"tuyen-quang","role":"H","pop":820054,"km":0,"s24":85.08},{"id":"ha-giang","n":"Hà Giang","u":"tuyen-quang","role":"A","pop":908263,"km":113.66,"s24":84.16},{"id":"yen-bai","n":"Yên Bái","u":"lao-cai","role":"H","pop":863338,"km":0,"s24":86.64},{"id":"lao-cai","n":"Lào Cai","u":"lao-cai","role":"A","pop":787066,"km":128.24,"s24":84.92},{"id":"thai-nguyen","n":"Thái Nguyên","u":"thai-nguyen","role":"H","pop":1361474,"km":0,"s24":90.23},{"id":"bac-kan","n":"Bắc Kạn","u":"thai-nguyen","role":"A","pop":328609,"km":61.48,"s24":78.17},{"id":"phu-tho","n":"Phú Thọ","u":"phu-tho","role":"H","pop":1540608,"km":0,"s24":84.97},{"id":"vinh-phuc","n":"Vĩnh Phúc","u":"phu-tho","role":"A","pop":1221803,"km":21.07,"s24":83.46},{"id":"hoa-binh","n":"Hòa Bình","u":"phu-tho","role":"A","pop":892373,"km":56.6,"s24":84.08},{"id":"bac-giang","n":"Bắc Giang","u":"bac-ninh","role":"H","pop":1950615,"km":0,"s24":81.89},{"id":"bac-ninh","n":"Bắc Ninh","u":"bac-ninh","role":"A","pop":1543529,"km":15.62,"s24":82.27},{"id":"hung-yen","n":"Hưng Yên","u":"hung-yen","role":"H","pop":1313798,"km":0,"s24":87.7},{"id":"thai-binh","n":"Thái Bình","u":"hung-yen","role":"A","pop":1888184,"km":37.13,"s24":84.45},{"id":"hai-phong","n":"Hải Phòng","u":"hai-phong","role":"H","pop":2121841,"km":0,"s24":91.1},{"id":"hai-duong","n":"Hải Dương","u":"hai-phong","role":"A","pop":1971326,"km":40.14,"s24":90.18},{"id":"ninh-binh","n":"Ninh Bình","u":"ninh-binh","role":"H","pop":1027030,"km":0,"s24":85.34},{"id":"ha-nam","n":"Hà Nam","u":"ninh-binh","role":"A","pop":892755,"km":32.91,"s24":84.49},{"id":"nam-dinh","n":"Nam Định","u":"ninh-binh","role":"A","pop":1892427,"km":28.64,"s24":82.56},{"id":"quang-binh","n":"Quảng Bình","u":"quang-tri","role":"H","pop":924169,"km":0,"s24":82.46},{"id":"quang-tri","n":"Quảng Trị","u":"quang-tri","role":"A","pop":658619,"km":88.57,"s24":82.31},{"id":"da-nang","n":"Đà Nẵng","u":"da-nang","role":"H","pop":1269070,"km":0,"s24":83.91},{"id":"quang-nam","n":"Quảng Nam","u":"da-nang","role":"A","pop":1539468,"km":60.86,"s24":79.39},{"id":"quang-ngai","n":"Quảng Ngãi","u":"quang-ngai","role":"H","pop":1256952,"km":0,"s24":80.32},{"id":"kon-tum","n":"Kon Tum","u":"quang-ngai","role":"A","pop":598201,"km":121.81,"s24":84.03},{"id":"binh-dinh","n":"Bình Định","u":"gia-lai","role":"H","pop":1515422,"km":0,"s24":84.22},{"id":"gia-lai","n":"Gia Lai","u":"gia-lai","role":"A","pop":1630311,"km":133.53,"s24":83.53},{"id":"khanh-hoa","n":"Khánh Hòa","u":"khanh-hoa","role":"H","pop":1267443,"km":0,"s24":83.66},{"id":"ninh-thuan","n":"Ninh Thuận","u":"khanh-hoa","role":"A","pop":609820,"km":78.34,"s24":83.16},{"id":"lam-dong","n":"Lâm Đồng","u":"lam-dong","role":"H","pop":1361129,"km":0,"s24":83.02},{"id":"dak-nong","n":"Đắk Nông","u":"lam-dong","role":"A","pop":692896,"km":83.8,"s24":83.09},{"id":"binh-thuan","n":"Bình Thuận","u":"lam-dong","role":"A","pop":1266240,"km":118.98,"s24":82.63},{"id":"dak-lak","n":"Đắk Lắk","u":"dak-lak","role":"H","pop":1944821,"km":0,"s24":80.61},{"id":"phu-yen","n":"Phú Yên","u":"dak-lak","role":"A","pop":883298,"km":145.78,"s24":82.38},{"id":"ho-chi-minh-city","n":"Hồ Chí Minh City","u":"ho-chi-minh-city","role":"H","pop":9521886,"km":0,"s24":83.85},{"id":"binh-duong","n":"Bình Dương","u":"ho-chi-minh-city","role":"A","pop":2858815,"km":23.25,"s24":87.8},{"id":"ba-ria-vung-tau","n":"Bà Rịa–Vũng Tàu","u":"ho-chi-minh-city","role":"A","pop":1192863,"km":59.84,"s24":90.09},{"id":"dong-nai","n":"Đồng Nai","u":"dong-nai","role":"H","pop":3341716,"km":0,"s24":82.41},{"id":"binh-phuoc","n":"Bình Phước","u":"dong-nai","role":"A","pop":1060448,"km":64.38,"s24":82.07},{"id":"long-an","n":"Long An","u":"tay-ninh","role":"H","pop":1753041,"km":0,"s24":82.71},{"id":"tay-ninh","n":"Tây Ninh","u":"tay-ninh","role":"A","pop":1201736,"km":92.71,"s24":81.35},{"id":"can-tho","n":"Cần Thơ","u":"can-tho","role":"H","pop":1268514,"km":0,"s24":83.28},{"id":"soc-trang","n":"Sóc Trăng","u":"can-tho","role":"A","pop":1203705,"km":55.15,"s24":81.62},{"id":"hau-giang","n":"Hậu Giang","u":"can-tho","role":"A","pop":728924,"km":41.95,"s24":83.14},{"id":"vinh-long","n":"Vĩnh Long","u":"vinh-long","role":"H","pop":1035362,"km":0,"s24":81.75},{"id":"ben-tre","n":"Bến Tre","u":"vinh-long","role":"A","pop":1305281,"km":44.16,"s24":82.23},{"id":"tra-vinh","n":"Trà Vinh","u":"vinh-long","role":"A","pop":1022887,"km":54.1,"s24":86.58},{"id":"tien-giang","n":"Tiền Giang","u":"dong-thap","role":"H","pop":1795251,"km":0,"s24":83.05},{"id":"dong-thap","n":"Đồng Tháp","u":"dong-thap","role":"A","pop":1600963,"km":80.3,"s24":83.49},{"id":"ca-mau","n":"Cà Mau","u":"ca-mau","role":"H","pop":1210843,"km":0,"s24":86.42},{"id":"bac-lieu","n":"Bạc Liêu","u":"ca-mau","role":"A","pop":929439,"km":64.49,"s24":82.15},{"id":"kien-giang","n":"Kiên Giang","u":"an-giang","role":"H","pop":1763826,"km":0,"s24":85.93},{"id":"an-giang","n":"An Giang","u":"an-giang","role":"A","pop":1911002,"km":56.85,"s24":80.21}]};
+  const U = DATA.units, P = DATA.provs;
+  const MINUS = '−';
+  const EST = [
+    { g: 'Main estimate', k: 'Baseline, units weighted equally', n: 34, b: 1.592, lo: 0.28, hi: 2.91, p: '0.020', main: true },
+    { g: 'Robustness checks', k: 'Population-weighted', n: 34, b: 2.189, lo: 0.69, hi: 3.82, p: '0.013' },
+    { g: 'Robustness checks', k: 'ANCOVA, 2024 level held constant', n: 34, b: 1.507, lo: 0.20, hi: 2.82, p: '0.026' },
+    { g: 'Robustness checks', k: 'North and centre only', n: 26, b: 1.472, lo: 0.11, hi: 2.84, p: '0.036' },
+    { g: 'Robustness checks', k: 'Without the three lowest 2025 scorers', n: 31, b: 1.609, lo: 0.01, hi: 3.25, p: '0.0499' },
+    { g: 'Robustness checks', k: '2022–2024 average as baseline', n: 34, b: 1.674, lo: -0.30, hi: 3.70, p: '0.098' },
+    { g: 'Sub-indices', k: 'Service sub-index (16 criteria)', n: 34, b: 2.039, lo: 0.36, hi: 3.69, p: '0.021' },
+    { g: 'Sub-indices', k: 'Policy sub-index (23 criteria)', n: 34, b: 1.281, lo: -0.02, hi: 2.60, p: '0.054' },
+    { g: 'Placebos, before the reform', k: '2022 to 2023', n: 34, b: 0.490, lo: -0.70, hi: 1.68, p: '0.392' },
+    { g: 'Placebos, before the reform', k: '2023 to 2024', n: 34, b: -0.122, lo: -1.73, hi: 1.56, p: '0.879' }
+  ];
+
+  // ---------- helpers
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  function s(tag, attrs, parent) {
+    const e = document.createElementNS(SVGNS, tag);
+    if (attrs) for (const k in attrs) if (attrs[k] != null) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function txt(parent, x, y, str, attrs) {
+    const t = s('text', Object.assign({ x: x, y: y }, attrs || {}), parent);
+    t.textContent = str;
+    return t;
+  }
+  function h(tag, attrs) {
+    const e = document.createElement(tag);
+    if (attrs) for (const k in attrs) {
+      const v = attrs[k];
+      if (v == null) continue;
+      if (k === 'class') e.className = v;
+      else if (k === 'text') e.textContent = v;
+      else e.setAttribute(k, v);
+    }
+    for (let i = 2; i < arguments.length; i++) {
+      const c = arguments[i];
+      if (c == null) continue;
+      e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    }
+    return e;
+  }
+  const $ = id => document.getElementById(id);
+  function f(x, d) { d = d == null ? 2 : d; const t = Math.abs(x).toFixed(d); return (x < 0 && Number(t) !== 0 ? MINUS : '') + t; }
+  function fs(x, d) { d = d == null ? 2 : d; const t = Math.abs(x).toFixed(d); if (Number(t) === 0) return t; return (x < 0 ? MINUS : '+') + t; }
+  const fm = x => (x / 1e6).toFixed(2);
+  const mean = a => a.reduce((acc, v) => acc + v, 0) / a.length;
+  function wsd(v, w) {
+    let sw = 0, sx = 0;
+    for (let i = 0; i < v.length; i++) { sw += w[i]; sx += w[i] * v[i]; }
+    const m = sx / sw; let q = 0;
+    for (let i = 0; i < v.length; i++) q += w[i] * (v[i] - m) * (v[i] - m);
+    return Math.sqrt(q / sw);
+  }
+  const spread = a => Math.max.apply(null, a) - Math.min.apply(null, a);
+  const collator = new Intl.Collator('vi');
+  const reduceMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  function tween(ms, onFrame, done) {
+    if (reduceMotion.matches) { onFrame(1); if (done) done(); return function () {}; }
+    const t0 = performance.now(); let raf = 0;
+    const step = now => { const k = Math.min(1, (now - t0) / ms); onFrame(k); if (k < 1) raf = requestAnimationFrame(step); else if (done) done(); };
+    raf = requestAnimationFrame(step);
+    return function () { cancelAnimationFrame(raf); };
+  }
+  const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  function announce(msg) { const el = $('live'); el.textContent = ''; setTimeout(() => { el.textContent = msg; }, 30); }
+
+  // ---------- derived data
+  const UBY = new Map(U.map(u => [u.id, u]));
+  const PBY = new Map(P.map(p => [p.id, p]));
+  for (const u of U) {
+    u.provs = P.filter(p => p.u === u.id).sort((a, b) => (a.role === 'H' ? -1 : b.role === 'H' ? 1 : b.pop - a.pop));
+    const sc = u.provs.map(p => p.s24);
+    u.gap = u.m ? Math.max.apply(null, sc) - Math.min.apply(null, sc) : null;
+    u.hostName = u.host ? PBY.get(u.host).n : null;
+  }
+  const MERGED = U.filter(u => u.m), UNMERGED = U.filter(u => !u.m);
+  const AVG = [0, 1, 2, 3].map(i => mean(U.map(u => [u.s22, u.s23, u.s24, u.s25][i])));
+
+  // ---------- tooltip
+  const tip = h('div', { class: 'tip', 'aria-hidden': 'true' });
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  function showTip(x, y, value, title, cls, lines) {
+    tip.replaceChildren(h('div', { class: 'tip-v', text: value }), h('div', { class: 'tip-t' }, h('span', { class: 'key ' + cls }), title));
+    for (const l of lines || []) tip.appendChild(h('div', { class: 'tip-l', text: l }));
+    tip.hidden = false;
+    const r = tip.getBoundingClientRect();
+    let tx = x + 16, ty = y + 16;
+    if (tx + r.width > window.innerWidth - 8) tx = x - r.width - 16;
+    if (ty + r.height > window.innerHeight - 8) ty = y - r.height - 16;
+    tip.style.left = Math.max(8, tx) + 'px';
+    tip.style.top = Math.max(8, ty) + 'px';
+  }
+  function tipAt(el, d) {
+    const r = el.getBoundingClientRect();
+    showTip(r.left + r.width / 2, r.top + r.height / 2, d[0], d[1], d[2], d[3]);
+    announce(d[1] + ', ' + d[0] + '. ' + d[3].join('. '));
+  }
+  function hideTip() { tip.hidden = true; }
+
+  // ---------- shared selection
+  const state = { sel: 'ho-chi-minh-city', t: 0, merged: false, beta: 0, order: 'change', filter: 'all', sortKey: 'd', sortDir: 1, open: null };
+  const charts = [];
+  function select(id) {
+    if (!UBY.has(id)) return;
+    state.sel = id;
+    charts.forEach(c => { if (c.markSel) c.markSel(id); });
+    renderSide();
+    syncTable();
+    $('unitSel').value = id;
+  }
+  function setEmph(svg, id) {
+    if (!id) { svg.classList.remove('focusing'); return; }
+    svg.classList.add('focusing');
+    svg.querySelectorAll('[data-u]').forEach(e => e.classList.toggle('on', e.getAttribute('data-u') === id));
+  }
+  function setSel(svg, id) { svg.querySelectorAll('[data-u]').forEach(e => e.classList.toggle('sel', e.getAttribute('data-u') === id)); }
+  function keyNav(svg, getOrder, show, clear) {
+    let i = -1;
+    svg.setAttribute('tabindex', '0');
+    svg.addEventListener('focus', () => { const o = getOrder(); if (i < 0 || i >= o.length) i = Math.max(0, o.indexOf(state.sel)); show(o[i]); });
+    svg.addEventListener('blur', clear);
+    svg.addEventListener('keydown', e => {
+      const o = getOrder();
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') i = (i + 1) % o.length;
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') i = (i - 1 + o.length) % o.length;
+      else if (e.key === 'Home') i = 0;
+      else if (e.key === 'End') i = o.length - 1;
+      else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(o[Math.max(0, i)]); return; }
+      else if (e.key === 'Escape') { clear(); return; }
+      else return;
+      e.preventDefault();
+      show(o[i]);
+    });
+  }
+
+  // ---------- hero: 63 provinces into 34 units
+  const hero = (function () {
+    const box = $('heroChart');
+    const svg = s('svg', { class: 'svg', role: 'img', 'aria-label': 'The 63 former provinces (top row) are each joined to the 2025 unit they belong to (bottom row). Horizontal position is the 2024 SIPAS score and dot area grows with population. Arrow keys step through units; Enter selects one.' }, box);
+    const W8 = P.map(p => p.pop);
+    let L = null, dots = [], links = [], udots = new Map(), ring = null, cancel = null, topLabels = [];
+    function swarm(items, cy, maxOff) {
+      const order = items.slice().sort((a, b) => b.r - a.r);
+      const placed = [], out = new Map();
+      for (const it of order) {
+        let y = null;
+        for (let k = 0; k < 200; k++) {
+          const off = k === 0 ? 0 : Math.ceil(k / 2) * 2 * (k % 2 ? -1 : 1);
+          if (Math.abs(off) > maxOff) break;
+          let ok = true;
+          for (const q of placed) { const dx = q.x - it.x, dy = q.y - (cy + off), rr = q.r + it.r + 1.5; if (dx * dx + dy * dy < rr * rr) { ok = false; break; } }
+          if (ok) { y = cy + off; break; }
+        }
+        if (y === null) y = cy + (placed.length % 2 ? -maxOff : maxOff);
+        const pnt = { x: it.x, y: y, r: it.r };
+        placed.push(pnt); out.set(it.id, pnt);
+      }
+      return out;
+    }
+    function layout() {
+      const W = Math.max(300, Math.round(box.clientWidth)), narrow = W < 600;
+      const ML = narrow ? 6 : 150, MR = 12, H = narrow ? 318 : 330;
+      const lo = 77.5, hi = 91.5;
+      const X = v => ML + (v - lo) / (hi - lo) * (W - ML - MR);
+      const k = narrow ? 2.3 : 3.4, rmin = narrow ? 3.2 : 4;
+      const R = pop => Math.max(rmin, k * Math.sqrt(pop / 1e6));
+      const yP = narrow ? 84 : 80, yU = 238;
+      const pp = swarm(P.map(p => ({ id: p.id, x: X(p.s24), r: R(p.pop) })), yP, narrow ? 50 : 52);
+      const up = swarm(U.map(u => ({ id: u.id, x: X(u.s24), r: R(u.pop) })), yU, narrow ? 36 : 40);
+      return { W: W, H: H, X: X, narrow: narrow, yP: yP, yU: yU, pp: pp, up: up };
+    }
+    function render() {
+      L = layout();
+      const W = L.W, H = L.H, X = L.X;
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      svg.setAttribute('width', W); svg.setAttribute('height', H);
+      svg.replaceChildren();
+      const gA = s('g', null, svg);
+      for (let v = 78; v <= 90; v += 2) {
+        const x = X(v);
+        s('line', { x1: x, x2: x, y1: 10, y2: H - 26, class: 'grid' }, gA);
+        txt(gA, x, H - 8, String(v), { class: 'tick', 'text-anchor': 'middle' });
+      }
+      topLabels = [];
+      if (!L.narrow) {
+        topLabels.push(txt(svg, 0, L.yP + 2, '63', { class: 'rownum' }));
+        topLabels.push(txt(svg, 0, L.yP + 24, 'former provinces', { class: 'rowlab' }));
+        txt(svg, 0, L.yU + 2, '34', { class: 'rownum' });
+        txt(svg, 0, L.yU + 24, 'units, same survey', { class: 'rowlab' });
+      }
+      const gL = s('g', null, svg), gP = s('g', null, svg), gU = s('g', null, svg);
+      links = []; dots = []; udots = new Map();
+      for (const p of P) {
+        const u = UBY.get(p.u), a = L.pp.get(p.id), b = L.up.get(p.u), c = u.m ? 'm' : 'n';
+        links.push({ el: s('line', { class: 'link ' + c, 'data-u': p.u }, gL), a: a, b: b });
+        dots.push({ el: s('circle', { r: a.r.toFixed(2), class: 'pdot ' + c, 'data-u': p.u }, gP), a: a, b: b, p: p, x: a.x, y: a.y });
+      }
+      for (const u of U) {
+        const b = L.up.get(u.id);
+        udots.set(u.id, s('circle', { cx: b.x.toFixed(2), cy: b.y.toFixed(2), r: b.r.toFixed(2), class: 'udot ' + (u.m ? 'm' : 'n'), 'data-u': u.id }, gU));
+      }
+      ring = s('circle', { class: 'selring', r: 0 }, svg);
+      if (L.narrow) {
+        topLabels.push(txt(svg, 4, 16, '63 former provinces', { class: 'rowlab strong halo' }));
+        txt(svg, 4, L.yU - 46, '34 units, same 2024 survey', { class: 'rowlab strong halo' });
+      }
+      place(state.t);
+      markSel(state.sel);
+    }
+    function place(t) {
+      for (const d of dots) {
+        d.x = d.a.x + (d.b.x - d.a.x) * t; d.y = d.a.y + (d.b.y - d.a.y) * t;
+        d.el.setAttribute('cx', d.x.toFixed(2)); d.el.setAttribute('cy', d.y.toFixed(2));
+      }
+      for (const l of links) {
+        l.el.setAttribute('x1', (l.a.x + (l.b.x - l.a.x) * t).toFixed(2));
+        l.el.setAttribute('y1', (l.a.y + (l.b.y - l.a.y) * t).toFixed(2));
+        l.el.setAttribute('x2', l.b.x.toFixed(2)); l.el.setAttribute('y2', l.b.y.toFixed(2));
+      }
+      topLabels.forEach(el => { el.style.opacity = String(1 - 0.65 * t); });
+      readout(t);
+    }
+    function readout(t) {
+      const vals = P.map(p => p.s24 + (UBY.get(p.u).s24 - p.s24) * t);
+      $('roSD').textContent = f(wsd(vals, W8));
+      $('roRange').textContent = 'range ' + f(spread(vals));
+      $('roLabel').textContent = t <= 0.001 ? 'Spread across 63 provinces' : t >= 0.999 ? 'Spread across 34 units' : 'Averaging into units';
+    }
+    function markSel(id) {
+      setSel(svg, id);
+      const b = L && L.up.get(id);
+      if (!b || !ring) return;
+      ring.setAttribute('cx', b.x.toFixed(2)); ring.setAttribute('cy', b.y.toFixed(2)); ring.setAttribute('r', (b.r + 4).toFixed(2));
+    }
+    function nearest(mx, my) {
+      let best = null, bd = Infinity;
+      for (const d of dots) { const dd = Math.hypot(d.x - mx, d.y - my) - d.a.r; if (dd < bd) { bd = dd; best = { kind: 'p', p: d.p, u: d.p.u }; } }
+      for (const u of U) { const b = L.up.get(u.id); const dd = Math.hypot(b.x - mx, b.y - my) - b.r; if (dd < bd) { bd = dd; best = { kind: 'u', u: u.id }; } }
+      return bd <= 9 ? best : null;
+    }
+    function describe(hit) {
+      if (hit.kind === 'p') {
+        const p = hit.p, u = UBY.get(p.u);
+        const role = p.role === 'U' ? 'Unmerged province' : p.role === 'H' ? 'Host: its capital is the centre of the new ' + u.n : 'Absorbed into ' + u.n + ', ' + f(p.km, 0) + ' km from the new centre';
+        return [f(p.s24), p.n, u.m ? 'm' : 'n', ['SIPAS score, 2024', role, 'Population ' + fm(p.pop) + ' million']];
+      }
+      const u = UBY.get(hit.u);
+      return [f(u.s24), u.n, u.m ? 'm' : 'n', [u.m ? '2024 score rebuilt from ' + u.provs.length + ' former provinces' : 'Unmerged: the 2024 score is its own', 'Population ' + fm(u.pop) + ' million']];
+    }
+    function local(e) { const r = svg.getBoundingClientRect(); return [(e.clientX - r.left) * (L.W / r.width), (e.clientY - r.top) * (L.H / r.height)]; }
+    svg.addEventListener('pointermove', e => {
+      if (!L) return;
+      const m = local(e), hit = nearest(m[0], m[1]);
+      if (!hit) { setEmph(svg, null); hideTip(); svg.style.cursor = ''; return; }
+      svg.style.cursor = 'pointer';
+      setEmph(svg, hit.u);
+      const d = describe(hit);
+      showTip(e.clientX, e.clientY, d[0], d[1], d[2], d[3]);
+    });
+    svg.addEventListener('pointerleave', () => { setEmph(svg, null); hideTip(); });
+    svg.addEventListener('click', e => { if (!L) return; const m = local(e), hit = nearest(m[0], m[1]); if (hit) select(hit.u); });
+    keyNav(svg, () => U.slice().sort((a, b) => a.s24 - b.s24).map(u => u.id),
+      id => { setEmph(svg, id); tipAt(udots.get(id), describe({ kind: 'u', u: id })); },
+      () => { setEmph(svg, null); hideTip(); });
+    const btn = $('mergeBtn');
+    btn.addEventListener('click', () => {
+      state.merged = !state.merged;
+      btn.setAttribute('aria-pressed', String(state.merged));
+      btn.textContent = state.merged ? 'Split back into 63 provinces' : 'Merge into 34 units';
+      const from = state.t, to = state.merged ? 1 : 0;
+      if (cancel) cancel();
+      cancel = tween(1500, k => { state.t = from + (to - from) * ease(k); place(state.t); }, () => {
+        cancel = null;
+        announce(state.merged ? 'Merged. Spread across 34 units: ' + $('roSD').textContent + ' points.' : 'Split. Spread across 63 provinces: ' + $('roSD').textContent + ' points.');
+      });
+    });
+    return { render: render, markSel: markSel };
+  })();
+  charts.push(hero);
+
+  // ---------- dumbbell: 2024 rebuilt to 2025
+  const dumb = (function () {
+    const box = $('dumbChart');
+    const svg = s('svg', { class: 'svg', role: 'img', 'aria-label': 'For each of the 34 units, the rebuilt 2024 SIPAS score (open dot) and the 2025 score (filled dot). Arrow keys step through rows; Enter selects a unit.' }, box);
+    let rows = [], X = null, order = [], cancel = null;
+    function sorted() {
+      const r = U.slice();
+      if (state.order === 'change') r.sort((a, b) => a.d - b.d);
+      else if (state.order === 's25') r.sort((a, b) => b.s25 - a.s25);
+      else r.sort((a, b) => collator.compare(a.n, b.n));
+      return r;
+    }
+    function rowTip(u) {
+      const lines = [(u.m ? '2024 rebuilt ' : '2024 ') + f(u.s24) + ' → 2025 ' + f(u.s25)];
+      if (u.m && state.beta > 0.01) lines.push('2025 without the merger effect ' + f(u.s25 - state.beta));
+      lines.push(u.m ? 'Merged from ' + u.provs.length + ' former provinces' : 'Unmerged');
+      return [fs(u.d) + ' points', u.n, u.m ? 'm' : 'n', lines];
+    }
+    function render() {
+      const W = Math.max(300, Math.round(box.clientWidth)), narrow = W < 600;
+      const ML = narrow ? 120 : 160, MR = 14, MT = 8, MB = 30, RH = 22;
+      const R = sorted(); order = R.map(u => u.id);
+      const H = MT + R.length * RH + MB, lo = 76, hi = 92;
+      X = v => ML + (v - lo) / (hi - lo) * (W - ML - MR);
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      svg.setAttribute('width', W); svg.setAttribute('height', H);
+      svg.replaceChildren();
+      for (let v = lo; v <= hi; v += (narrow ? 4 : 2)) {
+        const x = X(v);
+        s('line', { x1: x, x2: x, y1: MT, y2: H - MB + 4, class: 'grid' }, svg);
+        txt(svg, x, H - 9, String(v), { class: 'tick', 'text-anchor': 'middle' });
+      }
+      rows = [];
+      R.forEach((u, i) => {
+        const y = MT + i * RH + RH / 2, c = u.m ? 'm' : 'n';
+        const g = s('g', { class: 'row', 'data-u': u.id }, svg);
+        s('rect', { x: 0, y: y - RH / 2, width: W, height: RH, class: 'rowbg' }, g);
+        txt(g, ML - 12, y + 4, u.n, { class: 'rlab', 'text-anchor': 'end' });
+        const ghost = s('line', { y1: y - 6, y2: y + 6, class: 'ghost' }, g);
+        const bar = s('line', { y1: y, y2: y, class: 'bar-l ' + c }, g);
+        const o = s('circle', { cy: y, r: 4.5, class: 'o24 ' + c }, g);
+        const fd = s('circle', { cy: y, r: 5, class: 'f25 ' + c }, g);
+        rows.push({ u: u, g: g, ghost: ghost, bar: bar, o: o, fd: fd });
+        g.addEventListener('pointerenter', e => { g.classList.add('hover'); const d = rowTip(u); showTip(e.clientX, e.clientY, d[0], d[1], d[2], d[3]); });
+        g.addEventListener('pointermove', e => { const d = rowTip(u); showTip(e.clientX, e.clientY, d[0], d[1], d[2], d[3]); });
+        g.addEventListener('pointerleave', () => { g.classList.remove('hover'); hideTip(); });
+        g.addEventListener('click', () => select(u.id));
+      });
+      place();
+      markSel(state.sel);
+    }
+    function place() {
+      for (const r of rows) {
+        const u = r.u, x24 = X(u.s24), x25 = X(u.s25 - state.beta * u.m), xo = X(u.s25);
+        r.o.setAttribute('cx', x24.toFixed(2)); r.fd.setAttribute('cx', x25.toFixed(2));
+        r.bar.setAttribute('x1', x24.toFixed(2)); r.bar.setAttribute('x2', x25.toFixed(2));
+        r.ghost.setAttribute('x1', xo.toFixed(2)); r.ghost.setAttribute('x2', xo.toFixed(2));
+        r.ghost.style.opacity = u.m && state.beta > 0.01 ? '1' : '0';
+      }
+      const v = U.map(u => u.s25 - state.beta * u.m);
+      $('cfSD').textContent = f(wsd(v, U.map(u => u.pop)));
+      $('cfRange').textContent = f(spread(v));
+      const mm = mean(MERGED.map(u => u.d)) - state.beta, mu = mean(UNMERGED.map(u => u.d));
+      $('cfMerged').textContent = fs(mm);
+      $('cfUnmerged').textContent = fs(mu);
+      $('cfDiff').textContent = fs(mm - mu);
+    }
+    function markSel(id) { rows.forEach(r => r.g.classList.toggle('sel', r.u.id === id)); }
+    keyNav(svg, () => order,
+      id => { const r = rows.find(x => x.u.id === id); rows.forEach(x => x.g.classList.toggle('hover', x === r)); tipAt(r.fd, rowTip(r.u)); },
+      () => { rows.forEach(x => x.g.classList.remove('hover')); hideTip(); });
+    const segBtns = Array.from(document.querySelectorAll('#cfSeg button'));
+    segBtns.forEach(b => b.addEventListener('click', () => {
+      segBtns.forEach(x => x.setAttribute('aria-checked', String(x === b)));
+      const from = state.beta, to = Number(b.getAttribute('data-beta'));
+      if (cancel) cancel();
+      cancel = tween(650, k => { state.beta = from + (to - from) * ease(k); place(); }, () => {
+        cancel = null;
+        announce('Spread in 2025: ' + $('cfSD').textContent + ' points.');
+      });
+    }));
+    $('orderSel').addEventListener('change', e => { state.order = e.target.value; render(); });
+    return { render: render, markSel: markSel };
+  })();
+  charts.push(dumb);
+
+  // ---------- forest plot of estimates
+  const forest = (function () {
+    const box = $('forest');
+    const lo = -2, hi = 4;
+    function render() {
+      box.replaceChildren();
+      let group = null;
+      const cells = [];
+      for (const e of EST) {
+        if (e.g !== group) { group = e.g; box.appendChild(h('div', { class: 'fgroup', text: group })); }
+        const row = h('div', { class: 'frow' + (e.main ? ' main' : '') });
+        row.appendChild(h('div', { class: 'flab' }, h('span', { text: e.k }), h('span', { class: 'fn', text: e.n + ' units' })));
+        const cell = h('div', { class: 'fbar' });
+        row.appendChild(cell);
+        cells.push([cell, e]);
+        row.appendChild(h('div', { class: 'fval' }, h('b', { text: fs(e.b) }), h('span', { text: f(e.lo) + ' to ' + f(e.hi) }), h('span', { class: 'fp', text: 'p = ' + e.p })));
+        box.appendChild(row);
+      }
+      const axRow = h('div', { class: 'frow axisrow' }, h('div', { class: 'flab' }));
+      const axCell = h('div', { class: 'fbar' });
+      axRow.appendChild(axCell);
+      axRow.appendChild(h('div', { class: 'fval' }, h('span', { class: 'fp', text: 'points' })));
+      box.appendChild(axRow);
+      const Wb = Math.max(160, Math.round(cells[0][0].getBoundingClientRect().width));
+      const X = v => 8 + (v - lo) / (hi - lo) * (Wb - 16);
+      for (const pair of cells) {
+        const e = pair[1];
+        const svg = s('svg', { class: 'svg', width: Wb, height: 26, viewBox: '0 0 ' + Wb + ' 26', 'aria-hidden': 'true' }, pair[0]);
+        s('rect', { x: X(-1), y: 0, width: X(1) - X(-1), height: 26, class: 'band' }, svg);
+        for (let v = lo; v <= hi; v++) s('line', { x1: X(v), x2: X(v), y1: 0, y2: 26, class: v === 0 ? 'zero' : 'grid' }, svg);
+        s('line', { x1: X(e.lo), x2: X(e.hi), y1: 13, y2: 13, class: 'ci' }, svg);
+        s('circle', { cx: X(e.b), cy: 13, r: 5, class: 'pt' }, svg);
+      }
+      const ax = s('svg', { class: 'svg', width: Wb, height: 20, viewBox: '0 0 ' + Wb + ' 20', 'aria-hidden': 'true' }, axCell);
+      for (let v = lo; v <= hi; v++) txt(ax, X(v), 14, v > 0 ? '+' + v : v < 0 ? MINUS + Math.abs(v) : '0', { class: 'tick', 'text-anchor': 'middle' });
+    }
+    return { render: render };
+  })();
+
+  // ---------- distance scatter
+  const scatter = (function () {
+    const box = $('distChart');
+    const svg = s('svg', { class: 'svg', role: 'img', 'aria-label': 'Scatter plot of the 23 merged units: distance D to the new centre against the 2024 to 2025 change in SIPAS score, with a fitted line rising 1.04 points per 100 km. Arrow keys step through units; Enter selects one.' }, box);
+    const xs = MERGED.map(u => u.D), ys = MERGED.map(u => u.d), xb = mean(xs), yb = mean(ys);
+    const slope = xs.reduce((acc, x, i) => acc + (x - xb) * (ys[i] - yb), 0) / xs.reduce((acc, x) => acc + (x - xb) * (x - xb), 0);
+    const icpt = yb - slope * xb;
+    let pts = [], ring = null;
+    function render() {
+      const W = Math.max(300, Math.round(box.clientWidth)), narrow = W < 600;
+      const ML = 42, MR = narrow ? 12 : 24, MT = 26, MB = 46, H = narrow ? 330 : 370;
+      const X = v => ML + v / 75 * (W - ML - MR);
+      const Y = v => MT + (5.5 - v) / 9.5 * (H - MT - MB);
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      svg.setAttribute('width', W); svg.setAttribute('height', H);
+      svg.replaceChildren();
+      for (let v = -4; v <= 4; v += 2) {
+        s('line', { x1: ML, x2: W - MR, y1: Y(v), y2: Y(v), class: v === 0 ? 'zero' : 'grid' }, svg);
+        txt(svg, ML - 8, Y(v) + 4, v > 0 ? '+' + v : v < 0 ? MINUS + Math.abs(v) : '0', { class: 'tick', 'text-anchor': 'end' });
+      }
+      for (let v = 0; v <= 75; v += 25) {
+        s('line', { x1: X(v), x2: X(v), y1: MT, y2: H - MB, class: 'grid' }, svg);
+        txt(svg, X(v), H - MB + 18, String(v), { class: 'tick', 'text-anchor': 'middle' });
+      }
+      txt(svg, ML - 34, 12, 'Change, 2024 to 2025 (points)', { class: 'axlab' });
+      txt(svg, W - MR, H - 6, narrow ? 'D, distance to the new centre (km)' : 'D, population-weighted distance to the new centre (km)', { class: 'axlab', 'text-anchor': 'end' });
+      const xa = Math.min.apply(null, xs), xz = Math.max.apply(null, xs);
+      s('line', { x1: X(xa), y1: Y(icpt + slope * xa), x2: X(xz), y2: Y(icpt + slope * xz), class: 'fit' }, svg);
+      pts = [];
+      const g = s('g', null, svg);
+      for (const u of MERGED) {
+        const c = s('circle', { cx: X(u.D).toFixed(2), cy: Y(u.d).toFixed(2), r: 5.5, class: 'sdot', 'data-u': u.id }, g);
+        pts.push({ u: u, x: X(u.D), y: Y(u.d), el: c });
+      }
+      const pick = [];
+      const by = (fn, dir) => MERGED.slice().sort((a, b) => dir * (fn(b) - fn(a)))[0];
+      [by(u => u.d, 1), by(u => u.d, -1), by(u => u.D, 1)].forEach(u => { if (pick.indexOf(u) < 0) pick.push(u); });
+      for (const u of pick) {
+        const x = X(u.D), y = Y(u.d), right = x > W * 0.68;
+        if (u.D === xz) txt(svg, x + 5, y - 11, u.n, { class: 'plab halo', 'text-anchor': 'end' });
+        else txt(svg, right ? x - 10 : x + 10, y + 4, u.n, { class: 'plab halo', 'text-anchor': right ? 'end' : 'start' });
+      }
+      txt(svg, X(xz) - 2, Y(icpt + slope * xz) + 20, 'fitted line', { class: 'plab halo', 'text-anchor': 'end' });
+      ring = s('circle', { class: 'selring', r: 0 }, svg);
+      markSel(state.sel);
+    }
+    function markSel(id) {
+      const p = pts.find(q => q.u.id === id);
+      if (!ring) return;
+      if (!p) { ring.setAttribute('r', 0); return; }
+      ring.setAttribute('cx', p.x.toFixed(2)); ring.setAttribute('cy', p.y.toFixed(2)); ring.setAttribute('r', 9.5);
+    }
+    function ptTip(u) { return [fs(u.d) + ' points', u.n, 'm', ['D = ' + f(u.D, 1) + ' km to the new centre', 'Farthest former capital: ' + f(u.Dx, 0) + ' km', 'Merged from ' + u.provs.length + ' former provinces']]; }
+    function nearest(e) {
+      const r = svg.getBoundingClientRect(), sx = Number(svg.getAttribute('width')) / r.width;
+      const mx = (e.clientX - r.left) * sx, my = (e.clientY - r.top) * sx;
+      let best = null, bd = Infinity;
+      for (const p of pts) { const d = Math.hypot(p.x - mx, p.y - my); if (d < bd) { bd = d; best = p; } }
+      return bd <= 18 ? best : null;
+    }
+    svg.addEventListener('pointermove', e => {
+      const p = nearest(e);
+      if (!p) { setEmph(svg, null); hideTip(); svg.style.cursor = ''; return; }
+      svg.style.cursor = 'pointer';
+      setEmph(svg, p.u.id);
+      const d = ptTip(p.u);
+      showTip(e.clientX, e.clientY, d[0], d[1], d[2], d[3]);
+    });
+    svg.addEventListener('pointerleave', () => { setEmph(svg, null); hideTip(); });
+    svg.addEventListener('click', e => { const p = nearest(e); if (p) select(p.u.id); });
+    keyNav(svg, () => MERGED.slice().sort((a, b) => a.D - b.D).map(u => u.id),
+      id => { const p = pts.find(q => q.u.id === id); setEmph(svg, id); tipAt(p.el, ptTip(p.u)); },
+      () => { setEmph(svg, null); hideTip(); });
+    return { render: render, markSel: markSel };
+  })();
+  charts.push(scatter);
+
+  // ---------- detail card
+  function sparkline(u) {
+    const W = 230, H = 64, ML = 4, MR = 44, MT = 8, MB = 16;
+    const vals = [u.s22, u.s23, u.s24, u.s25], c = u.m ? 'm' : 'n';
+    const all = vals.concat(AVG);
+    const lo = Math.floor(Math.min.apply(null, all) - 0.5), hi = Math.ceil(Math.max.apply(null, all) + 0.5);
+    const X = i => ML + i * (W - ML - MR) / 3, Y = v => MT + (hi - v) / (hi - lo) * (H - MT - MB);
+    const wrap = h('div');
+    const svg = s('svg', { class: 'spark', width: W, height: H, viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': u.n + ', 2022 to 2025: ' + vals.map(v => f(v)).join(', ') });
+    s('path', { d: AVG.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(''), class: 'sp-avg' }, svg);
+    s('path', { d: vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(''), class: 'sp-line ' + c }, svg);
+    s('circle', { cx: X(3), cy: Y(vals[3]), r: 4, class: 'sp-dot ' + c }, svg);
+    txt(svg, X(3) + 8, Y(vals[3]) + 4, f(vals[3]), { class: 'sp-lab' });
+    txt(svg, X(0), H - 3, '2022', { class: 'sp-yr' });
+    txt(svg, X(3), H - 3, '2025', { class: 'sp-yr', 'text-anchor': 'middle' });
+    wrap.appendChild(svg);
+    wrap.appendChild(h('div', { class: 'sp-key' }, h('span', null, h('i', { class: c }), u.m ? 'this unit, rebuilt' : 'this unit'), h('span', null, h('i', { class: 'a' }), 'mean of 34 units')));
+    return wrap;
+  }
+  function detailCard(u) {
+    const c = u.m ? 'm' : 'n';
+    const card = h('div', { class: 'card' });
+    card.appendChild(h('div', { class: 'card-head' },
+      h('h3', { class: 'uname', text: u.n }),
+      h('span', { class: 'chip' }, h('span', { class: 'sw ' + c }), u.m ? 'Merged from ' + u.provs.length + ' provinces' : 'Unmerged')));
+    card.appendChild(h('p', { class: 'card-sub', text: u.m ? 'Administrative centre: the former capital of ' + u.hostName + '.' : 'Boundaries unchanged in 2025, so its 2024 score is its own.' }));
+    const kv = h('div', { class: 'kv' });
+    [[u.m ? '2024, rebuilt' : '2024', f(u.s24)], ['2025', f(u.s25)], ['Change', fs(u.d)], ['Rank in 2025', u.rk + ' of 34']].forEach(pair => kv.appendChild(h('div', null, h('span', { text: pair[0] }), h('b', { text: pair[1] }))));
+    card.appendChild(kv);
+    const subs = h('dl', { class: 'subs' },
+      h('dt', { text: 'Service sub-index' }), h('dd', { text: f(u.v24) + ' → ' + f(u.v25) + ' (' + fs(u.v25 - u.v24) + ')' }),
+      h('dt', { text: 'Policy sub-index' }), h('dd', { text: f(u.p24) + ' → ' + f(u.p25) + ' (' + fs(u.p25 - u.p24) + ')' }),
+      h('dd', { class: 'fn', text: 'The 2024 service score is recovered from the overall and policy scores.' }));
+    card.appendChild(h('div', { class: 'card-two' }, sparkline(u), subs));
+    if (u.m) {
+      const tb = h('tbody');
+      for (const p of u.provs) {
+        tb.appendChild(h('tr', null,
+          h('th', { scope: 'row', text: p.n }),
+          h('td', { text: p.role === 'H' ? 'Centre' : 'Absorbed' }),
+          h('td', { text: fm(p.pop) }),
+          h('td', { text: f(p.km, 0) }),
+          h('td', { text: f(p.s24) }),
+          h('td', { class: 'naive', text: fs(u.s25 - p.s24) })));
+      }
+      const head = h('tr');
+      ['Former province', 'Role', 'Pop. (m)', 'Km to centre', 'SIPAS 2024', 'Unit 2025 minus this*'].forEach(t => head.appendChild(h('th', { scope: 'col', text: t })));
+      card.appendChild(h('div', { class: 'mini-wrap' }, h('table', { class: 'mini' }, h('caption', { class: 'vh', text: 'Former provinces of ' + u.n }), h('thead', null, head), tb)));
+      const terms = u.provs.map(p => fm(p.pop) + ' × ' + f(p.s24)).join(' + ');
+      card.appendChild(h('p', { class: 'formula', text: 'Rebuilt 2024 = (' + terms + ') ÷ ' + fm(u.pop) + ' = ' + f(u.s24) }));
+      card.appendChild(h('p', { class: 'foot', text: '* A former province’s 2024 score set against its unit’s 2025 score mixes averaging with change. The like-for-like change for ' + u.n + ' is ' + fs(u.d) + ' points. Population in millions, 2024 census.' }));
+    }
+    return card;
+  }
+  function renderSide() { $('detail').replaceChildren(detailCard(UBY.get(state.sel))); }
+
+  // unit picker and absorbed-above-host list
+  const unitSel = $('unitSel');
+  U.slice().sort((a, b) => collator.compare(a.n, b.n)).forEach(u => unitSel.appendChild(h('option', { value: u.id, text: u.n + (u.m ? '' : ' (unmerged)') })));
+  unitSel.addEventListener('change', () => select(unitSel.value));
+  const above = P.filter(p => p.role === 'A' && p.s24 > PBY.get(UBY.get(p.u).host).s24)
+    .map(p => ({ p: p, u: UBY.get(p.u), hp: PBY.get(UBY.get(p.u).host) }))
+    .sort((a, b) => (b.p.s24 - b.hp.s24) - (a.p.s24 - a.hp.s24));
+  for (const a of above) {
+    const b = h('button', { type: 'button', class: 'abs' },
+      h('span', { class: 'abs-n', text: a.p.n }),
+      h('span', { class: 'abs-v', text: f(a.p.s24) + ' vs ' + f(a.hp.s24) }),
+      h('span', { class: 'abs-h', text: 'centre: ' + a.hp.n + (a.hp.n !== a.u.n ? ', unit ' + a.u.n : '') }));
+    b.addEventListener('click', () => { select(a.u.id); $('detail').scrollIntoView({ block: 'nearest', behavior: reduceMotion.matches ? 'auto' : 'smooth' }); });
+    $('absList').appendChild(b);
+  }
+
+  // ---------- unit monitor table
+  function miniBar(u) {
+    const svg = s('svg', { width: 56, height: 12, viewBox: '0 0 56 12', 'aria-hidden': 'true' });
+    const w = Math.max(1, Math.abs(u.d) * 5.4);
+    s('rect', { x: u.d < 0 ? 28 - w : 28, y: 2, width: w, height: 8, rx: 2, class: 'mb ' + (u.m ? 'm' : 'n') }, svg);
+    s('line', { x1: 28, x2: 28, y1: 0, y2: 12, class: 'mb0' }, svg);
+    return svg;
+  }
+  function tableRows() {
+    const r = U.filter(u => state.filter === 'all' || (state.filter === 'm') === Boolean(u.m));
+    const k = state.sortKey, d = state.sortDir;
+    r.sort((a, b) => {
+      if (k === 'n') return d * collator.compare(a.n, b.n);
+      const av = a[k], bv = b[k];
+      if (av == null && bv == null) return collator.compare(a.n, b.n);
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return d * (av - bv) || collator.compare(a.n, b.n);
+    });
+    return r;
+  }
+  function renderTable(focusId) {
+    const body = $('unitBody');
+    body.replaceChildren();
+    for (const u of tableRows()) {
+      const btn = h('button', { type: 'button', class: 'rowbtn', 'aria-expanded': String(state.open === u.id) }, u.n);
+      const tr = h('tr', { class: 'urow' + (u.id === state.sel ? ' sel' : ''), 'data-u': u.id },
+        h('th', { scope: 'row' }, btn),
+        h('td', { class: 'type' }, h('span', { class: 'sw ' + (u.m ? 'm' : 'n') }), u.m ? 'Merged' : 'Unmerged'),
+        h('td', { text: fm(u.pop) }),
+        h('td', { text: u.m ? f(u.D, 1) : '—' }),
+        h('td', { text: f(u.s24) }),
+        h('td', { text: f(u.s25) }),
+        h('td', { class: 'chg' }, miniBar(u), h('span', { text: fs(u.d) })),
+        h('td', { text: u.gap == null ? '—' : f(u.gap) }),
+        h('td', { text: String(u.rk) }));
+      tr.addEventListener('click', () => {
+        state.open = state.open === u.id ? null : u.id;
+        select(u.id);
+        renderTable(u.id);
+      });
+      body.appendChild(tr);
+      if (state.open === u.id) body.appendChild(h('tr', { class: 'drow' }, h('td', { colspan: '9' }, detailCard(u))));
+    }
+    if (focusId) { const b = body.querySelector('tr[data-u="' + focusId + '"] .rowbtn'); if (b) b.focus({ preventScroll: true }); }
+  }
+  function syncTable() { document.querySelectorAll('#unitBody .urow').forEach(tr => tr.classList.toggle('sel', tr.getAttribute('data-u') === state.sel)); }
+  document.querySelectorAll('#unitTable thead button').forEach(b => b.addEventListener('click', () => {
+    const k = b.getAttribute('data-k');
+    if (state.sortKey === k) state.sortDir *= -1;
+    else { state.sortKey = k; state.sortDir = (k === 'n' || k === 'rk' || k === 'd') ? 1 : -1; }
+    document.querySelectorAll('#unitTable thead th').forEach(th => {
+      const bb = th.querySelector('button'), kk = bb.getAttribute('data-k'), on = kk === state.sortKey;
+      th.setAttribute('aria-sort', on ? (state.sortDir > 0 ? 'ascending' : 'descending') : 'none');
+      bb.querySelector('.arr').textContent = on ? (state.sortDir > 0 ? '↑' : '↓') : '';
+    });
+    renderTable();
+  }));
+  const filtBtns = Array.from(document.querySelectorAll('#filterSeg button'));
+  filtBtns.forEach(b => b.addEventListener('click', () => {
+    state.filter = b.getAttribute('data-f');
+    filtBtns.forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    renderTable();
+  }));
+
+  // ---------- copy data
+  const q = v => (/[",\n;]/.test(String(v)) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v));
+  function csvUnits() {
+    const out = ['unit,type,former_provinces,population_2024,D_km,sipas_2022,sipas_2023,sipas_2024_rebuilt,sipas_2025,change_2024_2025,rank_2025,policy_2024,policy_2025,services_2024_derived,services_2025'];
+    U.slice().sort((a, b) => a.rk - b.rk).forEach(u => out.push([u.n, u.m ? 'merged' : 'unmerged', u.provs.map(p => p.n).join('; '), u.pop, u.D, u.s22, u.s23, u.s24, u.s25, u.d, u.rk, u.p24, u.p25, u.v24, u.v25].map(q).join(',')));
+    return out.join('\n');
+  }
+  function csvProvs() {
+    const out = ['former_province,unit_2025,role,population_2024,km_to_new_centre,sipas_2024'];
+    P.forEach(p => out.push([p.n, UBY.get(p.u).n, p.role === 'H' ? 'host' : p.role === 'A' ? 'absorbed' : 'unmerged', p.pop, p.km, p.s24].map(q).join(',')));
+    return out.join('\n');
+  }
+  function copyText(text, label) {
+    const status = $('copyStatus'), ta = $('csvFallback');
+    const done = () => { ta.hidden = true; status.textContent = label + ' copied. Paste it into a spreadsheet.'; };
+    const fallback = () => { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); status.textContent = 'This viewer blocked copying. The data is selected below; press Ctrl+C (⌘C on a Mac).'; };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback);
+      else fallback();
+    } catch (err) { fallback(); }
+  }
+  $('copyUnits').addEventListener('click', () => copyText(csvUnits(), 'Unit data'));
+  $('copyProvs').addEventListener('click', () => copyText(csvProvs(), 'Province data'));
+
+  // ---------- service guide: bilingual, routing, checklist
+  const SVC_KEY = 'mlx-guide-v1';
+  const svc = { lang: /^vi/i.test(navigator.language || '') ? 'vi' : 'en', prov: 'bac-kan', proc: 'birth', checks: {}, big: false, example: true };
+  try {
+    const raw = window.localStorage ? window.localStorage.getItem(SVC_KEY) : null;
+    if (raw) {
+      const o = JSON.parse(raw);
+      if (o && typeof o === 'object') {
+        if (o.lang === 'vi' || o.lang === 'en') svc.lang = o.lang;
+        if (typeof o.prov === 'string' && PBY.has(o.prov)) svc.prov = o.prov;
+        if (typeof o.proc === 'string') svc.proc = o.proc;
+        if (o.checks && typeof o.checks === 'object') svc.checks = o.checks;
+        svc.big = o.big === true;
+        svc.example = o.example !== false;
+      }
+    }
+  } catch (err) { /* storage unavailable: keep defaults */ }
+  function saveSvc() {
+    try { window.localStorage.setItem(SVC_KEY, JSON.stringify({ lang: svc.lang, prov: svc.prov, proc: svc.proc, checks: svc.checks, big: svc.big, example: svc.example })); } catch (err) { /* ignore */ }
+  }
+  const Lg = (vi, en) => (svc.lang === 'vi' ? vi : en);
+  const loc = o => (o == null ? '' : typeof o === 'string' ? o : o[svc.lang]);
+  const dec = str => (svc.lang === 'vi' ? str.replace(/(\d)\.(\d)/g, '$1,$2') : str);
+  const nf = (x, d) => dec(f(x, d));
+  const nfs = (x, d) => dec(fs(x, d));
+  const CITY = { 'ha-noi': 1, 'ho-chi-minh-city': 1, 'hai-phong': 1, 'da-nang': 1, 'can-tho': 1, 'hue': 1 };
+  function uName(u) {
+    if (u.id === 'ho-chi-minh-city') return Lg('Thành phố Hồ Chí Minh', 'Hồ Chí Minh City');
+    return svc.lang === 'vi' ? (CITY[u.id] ? 'thành phố ' : 'tỉnh ') + u.n : u.n;
+  }
+  function pName(p) { return p.id === 'ho-chi-minh-city' && svc.lang === 'vi' ? 'TP. Hồ Chí Minh' : p.n; }
+
+  const PROCS = [
+    { id: 'birth', onlineOk: true,
+      name: { vi: 'Đăng ký khai sinh', en: 'Register a birth' },
+      where: { vi: 'UBND xã, phường hoặc đặc khu nơi cư trú của cha hoặc mẹ; nộp tại Trung tâm Phục vụ hành chính công cấp xã, hoặc trực tuyến.', en: 'The People’s Committee of the commune, ward or special zone where either parent lives; file at the commune public administrative service centre, or online.' },
+      before: { vi: 'Đã làm ở cấp xã; riêng trường hợp có yếu tố nước ngoài trước đây do UBND cấp huyện giải quyết.', en: 'Already a commune task; cases with a foreign element used to go to the district.' },
+      online: { vi: 'Có. Dịch vụ liên thông khai sinh, thường trú và thẻ BHYT cho trẻ dưới 6 tuổi trên dichvucong.gov.vn hoặc ứng dụng VNeID; từ 1/9/2026 có thể đề nghị cấp thẻ căn cước cho trẻ trong cùng quy trình.', en: 'Yes. The linked service for birth, permanent residence and a health-insurance card for children under 6, on dichvucong.gov.vn or the VNeID app; since 1 September 2026 you can also request the child’s ID card in the same flow.' },
+      fee: { vi: 'Miễn lệ phí nếu đăng ký đúng hạn.', en: 'Free when registered on time.' },
+      bring: [ { vi: 'Giấy chứng sinh (cơ sở y tế có thể đã gửi bản điện tử).', en: 'The birth certificate from the hospital (it may already have been sent electronically).' },
+               { vi: 'Tờ khai đăng ký khai sinh, điền tại quầy hoặc trực tuyến.', en: 'The birth registration form, at the counter or online.' } ],
+      law: 'Luật Hộ tịch 2014 (Điều 11); Nghị định 120/2025/NĐ-CP; Nghị định 63/2024/NĐ-CP, sửa đổi bởi Nghị định 301/2026/NĐ-CP' },
+    { id: 'marriage', onlineOk: true,
+      name: { vi: 'Đăng ký kết hôn', en: 'Register a marriage' },
+      where: { vi: 'UBND xã, phường hoặc đặc khu nơi cư trú của một trong hai bên, kể cả khi kết hôn với người nước ngoài.', en: 'The People’s Committee of the commune, ward or special zone where either partner lives, including marriages with a foreign national.' },
+      before: { vi: 'Kết hôn có yếu tố nước ngoài trước đây do UBND cấp huyện giải quyết.', en: 'Marriages with a foreign element used to be handled by the district.' },
+      online: { vi: 'Có thể nộp hồ sơ trực tuyến; hai bên cùng có mặt khi nhận Giấy chứng nhận kết hôn.', en: 'You can file online; both partners must be present to receive the marriage certificate.' },
+      fee: { vi: 'Miễn lệ phí với công dân Việt Nam cư trú trong nước; có yếu tố nước ngoài thì lệ phí do HĐND tỉnh quy định.', en: 'Free for Vietnamese citizens living in Viet Nam; with a foreign element, the fee is set by the province.' },
+      time: { vi: 'Có yếu tố nước ngoài: 5 ngày làm việc, tối đa 10 ngày nếu cần xác minh.', en: 'With a foreign element: 5 working days, up to 10 if checks are needed.' },
+      bring: [ { vi: 'Tờ khai đăng ký kết hôn.', en: 'The marriage registration form.' },
+               { vi: 'Giấy tờ tùy thân của cả hai bên.', en: 'Identity papers of both partners.' },
+               { vi: 'Nếu có yếu tố nước ngoài: bản sao hộ chiếu, giấy xác nhận của tổ chức y tế, giấy tờ nước ngoài đã hợp pháp hóa lãnh sự (trừ khi được miễn).', en: 'With a foreign element: a passport copy, a medical confirmation, and foreign papers with consular legalisation (unless exempt).' } ],
+      law: 'Luật Hộ tịch 2014; Nghị định 120/2025/NĐ-CP; Nghị định 123/2015/NĐ-CP (sửa đổi)' },
+    { id: 'copies', onlineOk: false,
+      name: { vi: 'Chứng thực bản sao từ bản chính', en: 'Certify copies of documents' },
+      where: { vi: 'UBND xã, phường hoặc đặc khu, kể cả giấy tờ do cơ quan nước ngoài cấp.', en: 'The People’s Committee of a commune, ward or special zone, including papers issued abroad.' },
+      before: { vi: 'Trước đây có thể làm ở Phòng Tư pháp cấp huyện hoặc UBND xã.', en: 'Previously at the district Justice Division or the commune.' },
+      online: { vi: 'Thường làm trực tiếp tại quầy.', en: 'Usually done in person at the counter.' },
+      fee: { vi: 'Theo mức phí niêm yết tại quầy.', en: 'As posted at the counter.' },
+      bring: [ { vi: 'Bản chính giấy tờ.', en: 'The original document.' },
+               { vi: 'Bản chụp cần chứng thực.', en: 'The copies you need certified.' } ],
+      law: 'Nghị định 23/2015/NĐ-CP (sửa đổi năm 2025); Nghị định 120/2025/NĐ-CP' },
+    { id: 'land', onlineOk: false,
+      name: { vi: 'Cấp sổ đỏ (Giấy chứng nhận quyền sử dụng đất)', en: 'Get a land use right certificate' },
+      where: { vi: 'Tùy trường hợp: Chủ tịch UBND xã, cơ quan quản lý đất đai cấp tỉnh, hoặc Văn phòng đăng ký đất đai. Hồ sơ thường nộp tại Trung tâm Phục vụ hành chính công xã hoặc nơi tỉnh quy định.', en: 'It depends on the case: the commune chairman, the provincial land agency, or the Land Registration Office. You usually file at the commune service centre or where your province directs.' },
+      before: { vi: 'Cấp lần đầu cho hộ gia đình, cá nhân trước đây do UBND cấp huyện; từ 1/7/2025 chuyển về xã; từ 31/1/2026 được phân lại theo Nghị định 49/2026/NĐ-CP.', en: 'First certificates for households and individuals used to come from the district; from 1 July 2025 from the commune; since 31 January 2026 the work is reassigned under Decree 49/2026/NĐ-CP.' },
+      online: { vi: 'Kiểm tra trên dichvucong.gov.vn xem tỉnh của bạn có nhận hồ sơ trực tuyến không.', en: 'Check on dichvucong.gov.vn whether your province accepts it online.' },
+      fee: { vi: 'Lệ phí và các nghĩa vụ tài chính (nếu có) theo thông báo của cơ quan thuế.', en: 'Fees and any land charges as notified by the tax authority.' },
+      note: { vi: 'Năm 2025 chỉ 71,1% người làm sổ đỏ nhận kết quả đúng hẹn và 26,3% phải đi nhiều cửa (khảo sát HCMA–MDRI). Mỗi tỉnh công bố trình tự riêng; hãy hỏi Trung tâm Phục vụ hành chính công xã trước khi nộp.', en: 'In 2025 only 71.1% of land-certificate applicants got their result on time, and 26.3% went through several windows (HCMA–MDRI survey). Each province publishes its own steps; ask your commune service centre before you file.' },
+      bring: [ { vi: 'Đơn theo mẫu.', en: 'The application form.' },
+               { vi: 'Các giấy tờ về đất bạn đang có.', en: 'Any land papers you already hold.' } ],
+      law: 'Luật Đất đai 2024; Nghị định 151/2025/NĐ-CP; Nghị định 49/2026/NĐ-CP' },
+    { id: 'build', onlineOk: false,
+      name: { vi: 'Xin giấy phép xây dựng nhà ở riêng lẻ', en: 'Get a building permit for a house' },
+      where: { vi: 'UBND xã, phường hoặc đặc khu nơi có công trình, theo phân cấp của tỉnh.', en: 'The People’s Committee of the commune, ward or special zone where you build, as your province assigns.' },
+      before: { vi: 'Trước đây do UBND cấp huyện cấp.', en: 'Previously issued by the district.' },
+      online: { vi: 'Kiểm tra trên dichvucong.gov.vn xem tỉnh của bạn có nhận hồ sơ trực tuyến không.', en: 'Check on dichvucong.gov.vn whether your province accepts it online.' },
+      fee: { vi: 'Theo mức tỉnh quy định.', en: 'As set by your province.' },
+      note: { vi: 'Nghị định 140/2025/NĐ-CP giao việc này cho cấp xã và áp dụng đến 1/3/2027; Luật Xây dựng 2025 áp dụng từ 1/7/2026. Hỏi trình tự hiện hành của tỉnh trước khi nộp.', en: 'Decree 140/2025/NĐ-CP gives this to communes until 1 March 2027, and the 2025 Construction Law applies from 1 July 2026. Ask for your province’s current steps before you file.' },
+      bring: [ { vi: 'Đơn đề nghị cấp giấy phép xây dựng.', en: 'The permit application form.' },
+               { vi: 'Bản sao giấy tờ chứng minh quyền sử dụng đất.', en: 'A copy of your land use right papers.' },
+               { vi: 'Bản vẽ thiết kế.', en: 'The design drawings.' } ],
+      law: 'Nghị định 140/2025/NĐ-CP; Luật Xây dựng' },
+    { id: 'biz', onlineOk: true,
+      name: { vi: 'Đăng ký hộ kinh doanh', en: 'Register a household business' },
+      where: { vi: 'Cơ quan đăng ký kinh doanh cấp xã, tức phòng chuyên môn về kinh tế của UBND xã, phường hoặc đặc khu.', en: 'The commune-level business registration office, the economic division of the commune, ward or special-zone People’s Committee.' },
+      before: { vi: 'Trước đây do Phòng Tài chính – Kế hoạch cấp huyện giải quyết.', en: 'Previously the district Finance and Planning Division.' },
+      online: { vi: 'Có thể đăng ký trực tuyến.', en: 'Can be done online.' },
+      fee: { vi: 'Lệ phí do HĐND tỉnh quy định, nộp khi nộp hồ sơ.', en: 'Fee set by the provincial council, paid when you file.' },
+      time: { vi: 'Khi nội dung đã đăng ký thay đổi: đăng ký thay đổi trong 10 ngày.', en: 'When registered details change: register the change within 10 days.' },
+      bring: [ { vi: 'Giấy đề nghị đăng ký hộ kinh doanh.', en: 'The household business registration form.' },
+               { vi: 'Nếu các thành viên gia đình cùng đăng ký: văn bản ủy quyền cho một người làm chủ hộ kinh doanh.', en: 'If family members register together: their written authorisation for one member to act as owner.' } ],
+      law: 'Nghị định 168/2025/NĐ-CP; Nghị định 125/2025/NĐ-CP' },
+    { id: 'residence', onlineOk: true,
+      name: { vi: 'Đăng ký thường trú, tạm trú', en: 'Register your residence' },
+      where: { vi: 'Công an xã, phường hoặc đặc khu nơi bạn cư trú.', en: 'The commune, ward or special-zone police where you live.' },
+      before: { vi: 'Phần lớn đã do công an xã giải quyết; công an cấp huyện đã giải thể từ 1/3/2025.', en: 'Mostly the commune police already; district police were dissolved on 1 March 2025.' },
+      online: { vi: 'Có, trên dichvucong.gov.vn hoặc ứng dụng VNeID.', en: 'Yes, on dichvucong.gov.vn or the VNeID app.' },
+      fee: { vi: 'Theo biểu lệ phí của Bộ Tài chính (Thông tư 75/2022/TT-BTC, sửa đổi).', en: 'Per the Ministry of Finance fee schedule (Circular 75/2022/TT-BTC, as amended).' },
+      bring: [ { vi: 'Tờ khai thay đổi thông tin cư trú (mẫu CT01).', en: 'The residence information change form (CT01).' },
+               { vi: 'Giấy tờ chứng minh chỗ ở hợp pháp.', en: 'Proof that you may lawfully live at the address.' } ],
+      law: 'Luật Cư trú 2020; Thông tư 53/2025/TT-BCA' },
+    { id: 'idcard', onlineOk: false, noId: true,
+      name: { vi: 'Cấp đổi, cấp lại thẻ căn cước', en: 'Replace your ID card' },
+      where: { vi: 'Công an xã, phường hoặc đặc khu nơi nhận loại hồ sơ này, hoặc công an tỉnh.', en: 'The commune, ward or special-zone police where they take these applications, or the provincial police.' },
+      before: { vi: 'Trước đây công an cấp huyện cũng tiếp nhận; đã giải thể từ 1/3/2025.', en: 'District police also took applications; they were dissolved on 1 March 2025.' },
+      online: { vi: 'Thường phải đến trực tiếp để thu nhận ảnh và vân tay.', en: 'Usually in person, so your photo and fingerprints can be taken.' },
+      fee: { vi: 'Hỏi mức lệ phí tại công an xã. Đổi thẻ chỉ vì địa giới thay đổi là không bắt buộc.', en: 'Ask the commune police about the fee. Replacing a card only because boundaries changed is optional.' },
+      bring: [ { vi: 'Thẻ căn cước hoặc CCCD đang dùng, nếu đổi thẻ.', en: 'Your current card, if you are replacing it.' } ],
+      law: 'Luật Căn cước 2023 (Điều 24); Nghị quyết 190/2025/QH15 (Điều 10)' }
+  ];
+  if (!PROCS.some(p => p.id === svc.proc)) svc.proc = 'birth';
+
+  function svcChecklist(pr) {
+    const before = [Lg('Xem danh mục giấy tờ, phí và thời hạn chính thức của thủ tục này trên dichvucong.gov.vn (gõ tên thủ tục để tìm).', 'Look up the official document list, fee and time limit on dichvucong.gov.vn (search for the procedure by name).')];
+    if (!pr.noId) before.push(Lg('Mang thẻ căn cước bản gốc.', 'Bring your original ID card.'));
+    pr.bring.forEach(b => before.push(loc(b)));
+    if (pr.onlineOk) before.push(Lg('Muốn nộp trực tuyến: đăng nhập dichvucong.gov.vn hoặc ứng dụng VNeID bằng tài khoản định danh điện tử.', 'To file online: sign in to dichvucong.gov.vn or the VNeID app with your electronic identity account.'));
+    return [
+      { title: Lg('Trước khi đi', 'Before you go'), items: before },
+      { title: Lg('Tại quầy', 'At the counter'), items: [
+        Lg('Nhận Giấy tiếp nhận hồ sơ và hẹn trả kết quả; ghi lại mã hồ sơ.', 'Get the receipt with your appointment date and note the file code.'),
+        Lg('Nếu còn thiếu giấy tờ: nhận Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ và đề nghị ghi đủ mọi thứ còn thiếu.', 'If papers are missing: take the written request to complete your file, and ask for everything missing to be listed.'),
+        Lg('Chỉ nộp phí, lệ phí có trong danh mục và giữ biên lai.', 'Pay only listed fees and keep the receipt.') ] },
+      { title: Lg('Sau khi nộp', 'After you file'), items: [
+        Lg('Tra cứu tình trạng hồ sơ bằng mã hồ sơ trên dichvucong.gov.vn.', 'Track your file with its code on dichvucong.gov.vn.'),
+        Lg('Nếu trễ hẹn: cơ quan phải xin lỗi bằng văn bản và hẹn lại ngày trả kết quả.', 'If it is late, the agency must apologise in writing and set a new date.'),
+        Lg('Gặp vướng mắc: gửi phản ánh trên dichvucong.gov.vn hoặc gọi 1800 1096.', 'If something goes wrong, send feedback on dichvucong.gov.vn or call 1800 1096.') ] }
+    ];
+  }
+  function svcText(pr, groups) {
+    const lines = [loc(pr.name), Lg('Nộp ở đâu: ', 'Where to file: ') + loc(pr.where), Lg('Phí, lệ phí: ', 'Fees: ') + loc(pr.fee)];
+    if (pr.time) lines.push(Lg('Thời hạn: ', 'Time limit: ') + loc(pr.time));
+    groups.forEach(g => { lines.push(''); lines.push(g.title.toUpperCase()); g.items.forEach(it => lines.push('[ ] ' + it)); });
+    lines.push('');
+    lines.push(Lg('Một lần là xong · hướng dẫn độc lập, đối chiếu ngày 15/11/2026', 'Một lần là xong · independent guide, checked 15 Nov 2026'));
+    return lines.join('\n');
+  }
+  function svcSpeechText(pr, groups) {
+    const parts = [loc(pr.name) + '.', Lg('Nộp ở đâu: ', 'Where to file: ') + loc(pr.where)];
+    groups.forEach(g => { parts.push(g.title + '.'); g.items.forEach(it => parts.push(it)); });
+    return parts.join(' ')
+      .replace(/dichvucong\.gov\.vn/g, Lg('dịch vụ công chấm gov chấm vn', 'dichvucong dot gov dot vn'))
+      .replace(/1800 1096/g, '1 8 0 0, 1 0 9 6');
+  }
+  function svcCopy(text, status, fb) {
+    const ok = () => { fb.hidden = true; status.textContent = Lg('Đã sao chép. Dán vào Zalo, tin nhắn hoặc ghi chú.', 'Copied. Paste it into a message or a note.'); };
+    const fail = () => {
+      fb.hidden = false; fb.value = text; fb.focus(); fb.select();
+      status.textContent = Lg('Trình xem này chặn sao chép. Nội dung đã được chọn bên dưới; nhấn Ctrl+C (⌘C trên Mac).', 'This viewer blocked copying. The text is selected below; press Ctrl+C (⌘C on a Mac).');
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(ok, fail);
+      else fail();
+    } catch (err) { fail(); }
+  }
+  let svcSpeaking = false;
+  function withVoices(cb) {
+    const syn = window.speechSynthesis;
+    let done = false;
+    const go = () => { if (done) return; done = true; cb(syn.getVoices() || []); };
+    const now = syn.getVoices ? syn.getVoices() : [];
+    if (now && now.length) { go(); return; }
+    try { syn.addEventListener('voiceschanged', go, { once: true }); } catch (err) { /* older browsers */ }
+    setTimeout(go, 1200);
+  }
+  function svcSpeak(text, btn, status) {
+    const syn = window.speechSynthesis;
+    if (!syn) return;
+    if (svcSpeaking) { syn.cancel(); svcSpeaking = false; btn.textContent = Lg('Đọc to', 'Read aloud'); return; }
+    withVoices(voices => {
+      const v = voices.find(x => (x.lang || '').toLowerCase().indexOf(svc.lang) === 0);
+      if (!v) {
+        status.textContent = Lg('Thiết bị này chưa có giọng đọc tiếng Việt. Nội dung vẫn hiển thị trên màn hình.', 'This device has no English voice installed. The text stays on screen.');
+        return;
+      }
+      const ut = new SpeechSynthesisUtterance(text);
+      ut.voice = v; ut.lang = v.lang; ut.rate = 0.95;
+      ut.onend = ut.onerror = () => { svcSpeaking = false; btn.textContent = Lg('Đọc to', 'Read aloud'); };
+      syn.cancel(); syn.speak(ut);
+      svcSpeaking = true; btn.textContent = Lg('Dừng đọc', 'Stop reading');
+    });
+  }
+  function stopSpeech() { if (svcSpeaking && window.speechSynthesis) { window.speechSynthesis.cancel(); svcSpeaking = false; } }
+
+  function renderProvSelect() {
+    const sel = $('svProv');
+    sel.replaceChildren();
+    P.slice().sort((a, b) => collator.compare(pName(a), pName(b))).forEach(p => sel.appendChild(h('option', { value: p.id, text: pName(p) })));
+    sel.value = svc.prov;
+  }
+  function renderProvCard() {
+    const p = PBY.get(svc.prov), u = UBY.get(p.u);
+    const card = h('div', { class: 'pcard' });
+    card.appendChild(h('p', { class: 'pc-eyebrow', text: Lg('Tỉnh của bạn sau sắp xếp', 'Your province after the reorganisation') }));
+    if (u.m) {
+      const host = PBY.get(u.host);
+      card.appendChild(h('p', { class: 'pc-main' }, Lg('Từ 1/7/2025, ', 'Since 1 July 2025, '), h('b', { text: pName(p) }), Lg(' thuộc ', ' is part of '), h('b', { text: uName(u) }), '.'));
+      card.appendChild(h('p', { text: p.role === 'H'
+        ? Lg('Cơ quan cấp tỉnh đặt tại tỉnh lỵ cũ của ' + pName(p) + ', nên không xa hơn trước.', 'Provincial offices sit in the former capital of ' + pName(p) + ', so they are no farther away than before.')
+        : Lg('Cơ quan cấp tỉnh đặt tại tỉnh lỵ cũ của ' + pName(host) + ', cách tỉnh lỵ cũ của ' + pName(p) + ' khoảng ' + nf(p.km, 0) + ' km đường chim bay.', 'Provincial offices sit in the former capital of ' + pName(host) + ', about ' + nf(p.km, 0) + ' km in a straight line from the former capital of ' + pName(p) + '.') }));
+    } else {
+      card.appendChild(h('p', { class: 'pc-main' }, h('b', { text: pName(p) }),
+        Lg(' không sáp nhập; ranh giới tỉnh giữ nguyên', ' was not merged; its boundaries are unchanged'),
+        p.n !== u.n ? Lg(' (nay là ' + uName(u) + ').', ' (now ' + uName(u) + ').') : '.'));
+    }
+    card.appendChild(h('p', { class: 'pc-note', text: Lg('Phần lớn thủ tục thường gặp được làm tại xã, phường của bạn hoặc trực tuyến. Giấy tờ cấp trước khi sắp xếp vẫn dùng được đến khi hết hạn.', 'Most everyday procedures are handled in your commune or ward, or online. Papers issued before the reorganisation stay valid until they expire.') }));
+    const ev = h('div', { class: 'pc-ev' });
+    ev.appendChild(h('span', { class: 'pc-ev-lab', text: Lg('Mức hài lòng với dịch vụ hành chính (SIPAS), ', 'Satisfaction with administrative services (SIPAS), ') + uName(u) }));
+    ev.appendChild(h('span', { class: 'pc-ev-val', text: nf(u.s24) + ' → ' + nf(u.s25) }));
+    ev.appendChild(h('span', { class: 'pc-ev-sub', text: Lg('2024' + (u.m ? ' (tính lại theo ranh giới mới)' : '') + ' đến 2025: ' + nfs(u.d) + ' điểm; hạng ' + u.rk + '/34.', '2024' + (u.m ? ' (rebuilt on the new boundaries)' : '') + ' to 2025: ' + nfs(u.d) + ' points; rank ' + u.rk + ' of 34.') }));
+    if (u.m) ev.appendChild(h('span', { class: 'pc-ev-sub', text: Lg('Năm 2024, các tỉnh cũ trong đơn vị này chênh nhau ' + nf(u.gap) + ' điểm; một con số chung che đi khoảng cách đó.', 'In 2024 its former provinces were ' + nf(u.gap) + ' points apart; one combined score hides that gap.') }));
+    const a = h('a', { href: '#evidence', class: 'pc-link' }, Lg('Xem bằng chứng cho ' + uName(u) + ' →', 'See the evidence for ' + uName(u) + ' →'));
+    a.addEventListener('click', () => { select(u.id); pendingScroll = '.detail-col'; });
+    ev.appendChild(a);
+    card.appendChild(ev);
+    $('svProvOut').replaceChildren(card);
+  }
+  function renderProcs() {
+    const box = $('svProcs');
+    box.replaceChildren();
+    PROCS.forEach(pr => {
+      const inp = h('input', { type: 'radio', name: 'svproc', value: pr.id, id: 'pr-' + pr.id });
+      inp.checked = pr.id === svc.proc;
+      inp.addEventListener('change', () => {
+        if (!inp.checked) return;
+        svc.proc = pr.id; svc.example = false; updateExample();
+        renderResult(true); saveSvc();
+        announce(Lg('Đã cập nhật: ', 'Updated: ') + loc(pr.name));
+      });
+      box.appendChild(h('label', { class: 'proc', for: 'pr-' + pr.id }, inp, h('span', { text: loc(pr.name) })));
+    });
+  }
+  function renderResult(scrollIt) {
+    stopSpeech();
+    const pr = PROCS.find(x => x.id === svc.proc) || PROCS[0];
+    const card = h('article', { class: 'rcard', 'aria-labelledby': 'rcTitle' });
+    card.appendChild(h('p', { class: 'rc-eyebrow', text: Lg('Nơi nộp và cách chuẩn bị', 'Where to file and how to prepare') }));
+    card.appendChild(h('h2', { class: 'rc-title', id: 'rcTitle', text: loc(pr.name) }));
+    const dl = h('dl', { class: 'rc-facts' });
+    const add = (k, v) => { dl.appendChild(h('dt', { text: k })); dl.appendChild(h('dd', { text: v })); };
+    add(Lg('Nộp ở đâu', 'Where to file'), loc(pr.where));
+    add(Lg('Trước 1/7/2025', 'Before 1 July 2025'), loc(pr.before));
+    add(Lg('Trực tuyến', 'Online'), loc(pr.online));
+    add(Lg('Phí, lệ phí', 'Fees'), loc(pr.fee));
+    if (pr.time) add(Lg('Thời hạn', 'Time limit'), loc(pr.time));
+    card.appendChild(dl);
+    if (pr.note) card.appendChild(h('p', { class: 'rc-note', text: loc(pr.note) }));
+    const groups = svcChecklist(pr);
+    const cl = h('div', { class: 'checklist' });
+    groups.forEach((g, gi) => {
+      const ul = h('ul');
+      g.items.forEach((it, ii) => {
+        const key = pr.id + ':' + gi + ':' + ii, cid = 'ck-' + pr.id + '-' + gi + '-' + ii;
+        const cb = h('input', { type: 'checkbox', id: cid });
+        cb.checked = svc.checks[key] === true;
+        cb.addEventListener('change', () => { if (cb.checked) svc.checks[key] = true; else delete svc.checks[key]; saveSvc(); });
+        ul.appendChild(h('li', null, cb, h('label', { for: cid, text: it })));
+      });
+      cl.appendChild(h('section', { class: 'cl-group' }, h('h3', { text: g.title }), ul));
+    });
+    card.appendChild(cl);
+    const status = h('span', { class: 'rc-status', role: 'status' });
+    const fb = h('textarea', { class: 'rc-fallback', rows: '8', readonly: 'readonly', 'aria-label': Lg('Danh sách để sao chép', 'Checklist to copy') });
+    fb.hidden = true;
+    const act = h('div', { class: 'rc-actions' });
+    const cbtn = h('button', { type: 'button', class: 'btn-acc' }, Lg('Sao chép danh sách', 'Copy checklist'));
+    cbtn.addEventListener('click', () => svcCopy(svcText(pr, groups), status, fb));
+    act.appendChild(cbtn);
+    if ('speechSynthesis' in window) {
+      const sbtn = h('button', { type: 'button', class: 'btn-line' }, Lg('Đọc to', 'Read aloud'));
+      sbtn.addEventListener('click', () => svcSpeak(svcSpeechText(pr, groups), sbtn, status));
+      act.appendChild(sbtn);
+    }
+    act.appendChild(status);
+    card.appendChild(act);
+    card.appendChild(fb);
+    card.appendChild(h('p', { class: 'rc-caveat' },
+      Lg('Danh sách trên là những thứ thường cần, chưa đầy đủ. Danh mục, phí và thời hạn chính thức: ', 'This list covers what is usually needed and is not complete. For the official list, fees and time limits, see '),
+      h('a', { href: 'https://dichvucong.gov.vn', target: '_blank', rel: 'noopener' }, 'dichvucong.gov.vn'), '.'));
+    card.appendChild(h('p', { class: 'rc-law' }, h('b', { text: Lg('Căn cứ: ', 'Legal basis: ') }), pr.law));
+    $('svResult').replaceChildren(card);
+    if (scrollIt && window.innerWidth < 920) card.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+  }
+  function updateExample() { $('svExample').hidden = !svc.example; }
+  function renderSvc() { renderProvSelect(); renderProcs(); renderProvCard(); renderResult(false); updateExample(); }
+  function applyBig() { document.documentElement.classList.toggle('big', svc.big); $('bigBtn').setAttribute('aria-pressed', String(svc.big)); }
+  function setLang(l) {
+    if (l !== 'vi' && l !== 'en') return;
+    svc.lang = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll('#langSw button').forEach(b => b.setAttribute('aria-pressed', String(b.getAttribute('data-l') === l)));
+    renderSvc();
+    saveSvc();
+  }
+
+  // views: #service (default) and #evidence, plus section anchors inside each
+  const EVID = ['evidence', 'trap', 'change', 'estimates', 'distance', 'units', 'method'];
+  let pendingScroll = null;
+  function route(scrollIt) {
+    const id = decodeURIComponent((location.hash || '').slice(1));
+    const view = EVID.indexOf(id) >= 0 ? 'evidence' : 'service';
+    const ve = $('view-evidence'), vs = $('view-service');
+    const changed = (view === 'evidence') === ve.hidden;
+    ve.hidden = view !== 'evidence';
+    vs.hidden = view !== 'service';
+    document.querySelectorAll('.tab').forEach(a => { if (a.getAttribute('data-view') === view) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    hideTip();
+    if (view === 'evidence') stopSpeech();
+    if (!scrollIt) return;
+    const target = pendingScroll ? document.querySelector(pendingScroll) : (id && id !== 'service' && id !== 'evidence' ? $(id) : null);
+    pendingScroll = null;
+    if (target) {
+      requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+      setTimeout(() => target.scrollIntoView({ block: 'start' }), 350);
+    } else if (changed) window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', () => route(true));
+
+  function svcInit() {
+    document.documentElement.lang = svc.lang;
+    document.querySelectorAll('#langSw button').forEach(b => {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-l') === svc.lang));
+      b.addEventListener('click', () => setLang(b.getAttribute('data-l')));
+    });
+    $('bigBtn').addEventListener('click', () => { svc.big = !svc.big; applyBig(); saveSvc(); });
+    applyBig();
+    $('svProv').addEventListener('change', e => { svc.prov = e.target.value; svc.example = false; renderProvCard(); updateExample(); saveSvc(); });
+    renderSvc();
+  }
+
+  // ---------- first render and resizing
+  const sized = [[$('heroChart'), hero], [$('dumbChart'), dumb], [$('forest'), forest], [$('distChart'), scatter]];
+  sized.forEach(pair => { pair[0]._w = Math.round(pair[0].clientWidth); pair[1].render(); });
+  renderSide();
+  renderTable();
+  unitSel.value = state.sel;
+  svcInit();
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(entries => {
+      requestAnimationFrame(() => {
+        for (const en of entries) {
+          const pair = sized.find(x => x[0] === en.target);
+          const w = Math.round(en.target.clientWidth);
+          if (pair && w !== en.target._w) { en.target._w = w; pair[1].render(); }
+        }
+      });
+    });
+    sized.forEach(pair => ro.observe(pair[0]));
+  } else {
+    window.addEventListener('resize', () => sized.forEach(pair => pair[1].render()));
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => sized.forEach(pair => pair[1].render()));
+  route(true);
+})();
+</script>
+</body>
+</html>
